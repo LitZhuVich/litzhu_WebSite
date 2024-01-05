@@ -1,0 +1,11 @@
+D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.DomainCommons\bin\Debug\net8.0\LitZhu.DomainCommons.deps.json
+D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.DomainCommons\bin\Debug\net8.0\LitZhu.DomainCommons.dll
+D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.DomainCommons\bin\Debug\net8.0\LitZhu.DomainCommons.pdb
+D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.DomainCommons\obj\Debug\net8.0\LitZhu.DomainCommons.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.DomainCommons\obj\Debug\net8.0\LitZhu.DomainCommons.AssemblyInfoInputs.cache
+D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.DomainCommons\obj\Debug\net8.0\LitZhu.DomainCommons.AssemblyInfo.cs
+D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.DomainCommons\obj\Debug\net8.0\LitZhu.DomainCommons.csproj.CoreCompileInputs.cache
+D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.DomainCommons\obj\Debug\net8.0\LitZhu.DomainCommons.dll
+D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.DomainCommons\obj\Debug\net8.0\refint\LitZhu.DomainCommons.dll
+D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.DomainCommons\obj\Debug\net8.0\LitZhu.DomainCommons.pdb
+D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.DomainCommons\obj\Debug\net8.0\ref\LitZhu.DomainCommons.dll

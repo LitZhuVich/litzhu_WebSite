@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Comment.Domain/1.0.0": {
+        "dependencies": {
+          "LitZhu.DomainCommons": "1.0.0"
+        },
+        "runtime": {
+          "Comment.Domain.dll": {}
+        }
+      },
+      "LitZhu.DomainCommons/1.0.0": {
+        "runtime": {
+          "LitZhu.DomainCommons.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Comment.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LitZhu.DomainCommons/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

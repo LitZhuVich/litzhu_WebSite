@@ -1,0 +1,11 @@
+D:\Desktop\website\litzhu\LitZhu_backend\Search.Domain\bin\Debug\net8.0\Search.Domain.deps.json
+D:\Desktop\website\litzhu\LitZhu_backend\Search.Domain\bin\Debug\net8.0\Search.Domain.dll
+D:\Desktop\website\litzhu\LitZhu_backend\Search.Domain\bin\Debug\net8.0\Search.Domain.pdb
+D:\Desktop\website\litzhu\LitZhu_backend\Search.Domain\obj\Debug\net8.0\Search.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\website\litzhu\LitZhu_backend\Search.Domain\obj\Debug\net8.0\Search.Domain.AssemblyInfoInputs.cache
+D:\Desktop\website\litzhu\LitZhu_backend\Search.Domain\obj\Debug\net8.0\Search.Domain.AssemblyInfo.cs
+D:\Desktop\website\litzhu\LitZhu_backend\Search.Domain\obj\Debug\net8.0\Search.Domain.csproj.CoreCompileInputs.cache
+D:\Desktop\website\litzhu\LitZhu_backend\Search.Domain\obj\Debug\net8.0\Search.Domain.dll
+D:\Desktop\website\litzhu\LitZhu_backend\Search.Domain\obj\Debug\net8.0\refint\Search.Domain.dll
+D:\Desktop\website\litzhu\LitZhu_backend\Search.Domain\obj\Debug\net8.0\Search.Domain.pdb
+D:\Desktop\website\litzhu\LitZhu_backend\Search.Domain\obj\Debug\net8.0\ref\Search.Domain.dll

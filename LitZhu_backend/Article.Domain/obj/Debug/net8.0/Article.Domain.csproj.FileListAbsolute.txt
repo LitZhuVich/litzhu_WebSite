@@ -1,0 +1,15 @@
+D:\Desktop\website\litzhu\LitZhu_backend\Article.Domain\bin\Debug\net8.0\Article.Domain.deps.json
+D:\Desktop\website\litzhu\LitZhu_backend\Article.Domain\bin\Debug\net8.0\Article.Domain.dll
+D:\Desktop\website\litzhu\LitZhu_backend\Article.Domain\bin\Debug\net8.0\Article.Domain.pdb
+D:\Desktop\website\litzhu\LitZhu_backend\Article.Domain\bin\Debug\net8.0\LitZhu.DomainCommons.dll
+D:\Desktop\website\litzhu\LitZhu_backend\Article.Domain\bin\Debug\net8.0\LitZhu.DomainCommons.pdb
+D:\Desktop\website\litzhu\LitZhu_backend\Article.Domain\obj\Debug\net8.0\Article.Domain.csproj.AssemblyReference.cache
+D:\Desktop\website\litzhu\LitZhu_backend\Article.Domain\obj\Debug\net8.0\Article.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\website\litzhu\LitZhu_backend\Article.Domain\obj\Debug\net8.0\Article.Domain.AssemblyInfoInputs.cache
+D:\Desktop\website\litzhu\LitZhu_backend\Article.Domain\obj\Debug\net8.0\Article.Domain.AssemblyInfo.cs
+D:\Desktop\website\litzhu\LitZhu_backend\Article.Domain\obj\Debug\net8.0\Article.Domain.csproj.CoreCompileInputs.cache
+D:\Desktop\website\litzhu\LitZhu_backend\Article.Domain\obj\Debug\net8.0\Article.Domain.csproj.CopyComplete
+D:\Desktop\website\litzhu\LitZhu_backend\Article.Domain\obj\Debug\net8.0\Article.Domain.dll
+D:\Desktop\website\litzhu\LitZhu_backend\Article.Domain\obj\Debug\net8.0\refint\Article.Domain.dll
+D:\Desktop\website\litzhu\LitZhu_backend\Article.Domain\obj\Debug\net8.0\Article.Domain.pdb
+D:\Desktop\website\litzhu\LitZhu_backend\Article.Domain\obj\Debug\net8.0\ref\Article.Domain.dll

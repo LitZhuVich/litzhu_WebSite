@@ -1,0 +1,12 @@
+D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.Infrastructure\bin\Debug\net8.0\LitZhu.Infrastructure.deps.json
+D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.Infrastructure\bin\Debug\net8.0\LitZhu.Infrastructure.dll
+D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.Infrastructure\bin\Debug\net8.0\LitZhu.Infrastructure.pdb
+D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.Infrastructure\obj\Debug\net8.0\LitZhu.Infrastructure.csproj.AssemblyReference.cache
+D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.Infrastructure\obj\Debug\net8.0\LitZhu.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.Infrastructure\obj\Debug\net8.0\LitZhu.Infrastructure.AssemblyInfoInputs.cache
+D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.Infrastructure\obj\Debug\net8.0\LitZhu.Infrastructure.AssemblyInfo.cs
+D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.Infrastructure\obj\Debug\net8.0\LitZhu.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.Infrastructure\obj\Debug\net8.0\LitZhu.Infrastructure.dll
+D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.Infrastructure\obj\Debug\net8.0\refint\LitZhu.Infrastructure.dll
+D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.Infrastructure\obj\Debug\net8.0\LitZhu.Infrastructure.pdb
+D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.Infrastructure\obj\Debug\net8.0\ref\LitZhu.Infrastructure.dll
