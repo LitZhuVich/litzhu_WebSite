@@ -8,7 +8,7 @@ public class AggregateRootEntity : BaseEntity, IAggregateRoot, ISoftDelete, IHas
     public bool IsDeleted { get; private set; } = false;// 标记删除
     public DateTime CreationTime { get; private set; } = DateTime.Now; // 创建时间
     public DateTime? DeletionTime { get; private set; } // 删除时间
-    public DateTime? LastModificationTime { get; private set; } = DateTime.Now; // 最后修改时间
+    public DateTime? LastModificationTime { get; private set; } // 最后修改时间
 
     /// <summary>
     /// 软删除

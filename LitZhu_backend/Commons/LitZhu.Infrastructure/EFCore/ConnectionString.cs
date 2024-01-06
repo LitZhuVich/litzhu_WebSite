@@ -6,7 +6,8 @@ public class ConnectionString
 
     public ConnectionString()
     {
-        SqlServerConnection = "Data Source=.;Initial Catalog=LitZhu;Integrated Security=True;Trust Server Certificate=True";
+        SqlServerConnection 
+            = "Data Source=.;Initial Catalog=LitZhu;Integrated Security=True;Trust Server Certificate=True";
     }
 
     public ConnectionString(string connectionStr)

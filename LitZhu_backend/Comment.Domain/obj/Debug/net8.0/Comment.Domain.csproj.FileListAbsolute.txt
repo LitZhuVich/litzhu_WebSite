@@ -13,3 +13,4 @@ D:\Desktop\website\litzhu\LitZhu_backend\Comment.Domain\obj\Debug\net8.0\Comment
 D:\Desktop\website\litzhu\LitZhu_backend\Comment.Domain\obj\Debug\net8.0\refint\Comment.Domain.dll
 D:\Desktop\website\litzhu\LitZhu_backend\Comment.Domain\obj\Debug\net8.0\Comment.Domain.pdb
 D:\Desktop\website\litzhu\LitZhu_backend\Comment.Domain\obj\Debug\net8.0\ref\Comment.Domain.dll
+D:\Desktop\website\litzhu\LitZhu_backend\Comment.Domain\obj\Debug\net8.0\Comment.Domain.sourcelink.json

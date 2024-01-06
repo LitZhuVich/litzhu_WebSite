@@ -6,12 +6,12 @@ public interface IArticleRepository
     /// <summary>
     /// 异步获取所有文章
     /// </summary>
-    Task<List<Articles>> GetArticleAllAsync();
+    Task<List<Articles>> GetArticleAsync();
 
     /// <summary>
-    /// 异步获取所有未被删除的文章
+    /// 异步获取所有已被删除的文章
     /// </summary>
-    Task<List<Articles>> GetArticleAllUnDeletedAsync();
+    Task<List<Articles>> GetArticleDeletedAsync();
 
     /// <summary>
     /// 根据文章ID异步查找文章

@@ -152,3 +152,4 @@ D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\AutoMapp
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\FluentValidation.dll
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\obj\Debug\net8.0\LitZhu.WebApi.sourcelink.json

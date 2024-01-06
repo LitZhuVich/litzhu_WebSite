@@ -12,17 +12,17 @@ namespace LitZhu.WebApi.Controllers.Article;
 public class ArticleController(IArticleRepository _repository,IMapper _mapper) : ControllerBase
 {
     [HttpGet]
-    public async Task<ActionResult<List<ArticleDto>>> GetArticleAll()
+    public async Task<ActionResult<List<ArticleDto>>> GetArticle()
     {
-        var articles = await _repository.GetArticleAllAsync();
+        var articles = await _repository.GetArticleAsync();
         var articlesDto = _mapper.Map<List<ArticleDto>>(articles);
         return Ok(ApiResponse.Success(articlesDto));
     }
 
-    [HttpGet("UnDeleted")]
-    public async Task<ActionResult<List<ArticleDto>>> GetArticleAllUnDeleted()
+    [HttpGet("Deleted")]
+    public async Task<ActionResult<List<ArticleDto>>> GetArticleDeleted()
     {
-        var articles = await _repository.GetArticleAllUnDeletedAsync();
+        var articles = await _repository.GetArticleDeletedAsync();
         var articlesDto = _mapper.Map<List<ArticleDto>>(articles);
         return Ok(ApiResponse.Success(articlesDto));
     }

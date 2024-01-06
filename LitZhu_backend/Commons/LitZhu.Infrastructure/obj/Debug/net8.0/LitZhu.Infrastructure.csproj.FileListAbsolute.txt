@@ -10,3 +10,4 @@ D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.Infrastructure\obj\Debug
 D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.Infrastructure\obj\Debug\net8.0\refint\LitZhu.Infrastructure.dll
 D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.Infrastructure\obj\Debug\net8.0\LitZhu.Infrastructure.pdb
 D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.Infrastructure\obj\Debug\net8.0\ref\LitZhu.Infrastructure.dll
+D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.Infrastructure\obj\Debug\net8.0\LitZhu.Infrastructure.sourcelink.json
