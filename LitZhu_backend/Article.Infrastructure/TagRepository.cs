@@ -15,7 +15,7 @@ public class TagRepository(ArticleDbContext _db) : ITagRepository
 
     public async Task DeleteTagSoftAsync(Guid tagId)
     {
-        var tag = await FindTagsAsync(tagId);
+        var tag = await FindTagAsync(tagId);
         if (tag == null)
         {
             throw new Exception(nameof(DeleteTagSoftAsync) + "标签ID为空");
@@ -25,7 +25,7 @@ public class TagRepository(ArticleDbContext _db) : ITagRepository
 
     public async Task DeleteTagTrueAsync(Guid tagId)
     {
-        var tag = await FindTagsAsync(tagId);
+        var tag = await FindTagAsync(tagId);
         if (tag == null)
         {
             throw new Exception(nameof(DeleteTagTrueAsync) + "标签ID为空");
@@ -33,25 +33,25 @@ public class TagRepository(ArticleDbContext _db) : ITagRepository
         _db.Tags.Remove(tag);
     }
 
-    public async Task<Tags?> FindTagsAsync(Guid tagId)
+    public async Task<Tags?> FindTagAsync(Guid tagId)
     {
         var tag = await _db.Tags.FirstOrDefaultAsync(x => x.Id == tagId);
         return tag;
     }
 
-    public async Task<Tags?> FindTagsAsync(string tagName)
+    public async Task<Tags?> FindTagAsync(string tagName)
     {
         var tag = await _db.Tags.FirstOrDefaultAsync(x => x.TagName == tagName);
         return tag;
     }
 
-    public async Task<List<Tags>> GetTagsAsync()
+    public async Task<List<Tags>> GetTagAsync()
     {
         var tag = await _db.Tags.ToListAsync();
         return tag;
     }
 
-    public async Task<List<Tags>> GetTagsDeletedAsync()
+    public async Task<List<Tags>> GetTagDeletedAsync()
     {
         var tag = await _db.Tags.IgnoreQueryFilters()
             .Where(x => x.IsDeleted == true).ToListAsync();
@@ -65,7 +65,7 @@ public class TagRepository(ArticleDbContext _db) : ITagRepository
 
     public async Task<Tags> UpdateTagAsync(Tags tag)
     {
-        if (await FindTagsAsync(tag.Id) == null)
+        if (await FindTagAsync(tag.Id) == null)
         {
             throw new Exception(nameof(UpdateTagAsync) + "标签ID为空");
         }

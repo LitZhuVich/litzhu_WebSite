@@ -34,7 +34,7 @@ namespace Article.Infrastructure.Migrations
 
                     b.HasIndex("TagId");
 
-                    b.ToTable("Article_Tags", (string)null);
+                    b.ToTable("Articles_Tags", (string)null);
                 });
 
             modelBuilder.Entity("Article.Domain.Entities.Articles", b =>
@@ -95,7 +95,8 @@ namespace Article.Infrastructure.Migrations
 
                     b.Property<string>("TagName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
 
                     b.HasKey("Id");
 

@@ -5,30 +5,30 @@ namespace Article.Domain;
 public interface ITagRepository
 {
     /// <summary>
-    /// 获取所有标签（包括未删除的标签）的异步方法。
+    /// 获取未删除的标签的异步方法。
     /// </summary>
-    /// <returns>标签列表</returns>
-    Task<List<Tags>> GetTagsAsync();
+    /// <returns>未删除的标签列表</returns>
+    Task<List<Tags>> GetTagAsync();
 
     /// <summary>
     /// 获取已删除的标签的异步方法。
     /// </summary>
     /// <returns>已删除的标签列表</returns>
-    Task<List<Tags>> GetTagsDeletedAsync();
+    Task<List<Tags>> GetTagDeletedAsync();
 
     /// <summary>
     /// 根据标签 ID 查找标签的异步方法。
     /// </summary>
     /// <param name="tagId">标签 ID</param>
     /// <returns>匹配的标签对象，如果找不到则返回 null</returns>
-    Task<Tags?> FindTagsAsync(Guid tagId);
+    Task<Tags?> FindTagAsync(Guid tagId);
 
     /// <summary>
     /// 根据标签名称查找标签的异步方法。
     /// </summary>
     /// <param name="tagName">标签名称</param>
     /// <returns>匹配的标签对象，如果找不到则返回 null</returns>
-    Task<Tags?> FindTagsAsync(string tagName);
+    Task<Tags?> FindTagAsync(string tagName);
 
     /// <summary>
     /// 创建标签的异步方法。

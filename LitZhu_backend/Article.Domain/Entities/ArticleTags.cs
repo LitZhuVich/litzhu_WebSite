@@ -1,6 +1,4 @@
-﻿using LitZhu.DomainCommons.Models;
-
-namespace Article.Domain.Entities;
+﻿namespace Article.Domain.Entities;
 
 public class ArticleTags
 {

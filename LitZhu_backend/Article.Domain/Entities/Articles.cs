@@ -23,7 +23,7 @@ public class Articles : AggregateRootEntity
         return article;
     }
 
-    public void AddArticleTags(ArticleTags articleTags)
+    public void AddTag(ArticleTags articleTags)
     {
         ArticleTagsList.Add(articleTags);
     }

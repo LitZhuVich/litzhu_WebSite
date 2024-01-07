@@ -4,13 +4,15 @@ namespace Article.Domain;
 public interface IArticleRepository
 {
     /// <summary>
-    /// 异步获取所有文章
+    /// 获取未被删除的文章的异步方法
     /// </summary>
+    /// <returns>未删除的文章列表</returns>
     Task<List<Articles>> GetArticleAsync();
 
     /// <summary>
-    /// 异步获取所有已被删除的文章
+    /// 获取已被删除的文章的异步方法
     /// </summary>
+    /// <returns>已删除的文章列表</returns>
     Task<List<Articles>> GetArticleDeletedAsync();
 
     /// <summary>

@@ -10,7 +10,7 @@ public class TagConfig : IEntityTypeConfiguration<Tags>
     {
         builder.ToTable("Tags");
 
-        builder.Property(t => t.TagName).IsRequired();
+        builder.Property(t => t.TagName).IsRequired().HasMaxLength(10);
 
         builder.HasIndex(at => at.IsDeleted); // 设置索引
 
