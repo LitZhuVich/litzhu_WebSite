@@ -6,7 +6,7 @@ public class Comments : AggregateRootEntity
 {
     public Guid UserId { get; private set; }
     public Guid ArticleId { get; private set; }
-    public string Content { get; private set; }
+    public string Content { get; private set; } = string.Empty;
 
     public Comments() { }
 

@@ -1,5 +1,4 @@
-﻿
-namespace LitZhu.DomainCommons.Models;
+﻿namespace LitZhu.DomainCommons.Models;
 
 /// <summary>
 /// 实体基类接口

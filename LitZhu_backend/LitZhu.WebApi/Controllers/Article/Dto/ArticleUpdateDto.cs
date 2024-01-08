@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Article.WebApi.Dto;
+namespace LitZhu.WebApi.Controllers.Article.Dto;
 
 public record ArticleUpdateDto(string Title, string Content);
 

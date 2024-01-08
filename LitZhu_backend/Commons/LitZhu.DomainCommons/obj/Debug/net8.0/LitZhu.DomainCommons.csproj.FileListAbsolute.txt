@@ -9,3 +9,4 @@ D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.DomainCommons\obj\Debug\
 D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.DomainCommons\obj\Debug\net8.0\refint\LitZhu.DomainCommons.dll
 D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.DomainCommons\obj\Debug\net8.0\LitZhu.DomainCommons.pdb
 D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.DomainCommons\obj\Debug\net8.0\ref\LitZhu.DomainCommons.dll
+D:\Desktop\website\litzhu\LitZhu_backend\Commons\LitZhu.DomainCommons\obj\Debug\net8.0\LitZhu.DomainCommons.sourcelink.json

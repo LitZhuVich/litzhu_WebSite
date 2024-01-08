@@ -19,3 +19,4 @@ D:\Desktop\website\litzhu\LitZhu_backend\Article.Infrastructure\obj\Debug\net8.0
 D:\Desktop\website\litzhu\LitZhu_backend\Article.Infrastructure\obj\Debug\net8.0\Article.Infrastructure.pdb
 D:\Desktop\website\litzhu\LitZhu_backend\Article.Infrastructure\obj\Debug\net8.0\Article.Infrastructure.genruntimeconfig.cache
 D:\Desktop\website\litzhu\LitZhu_backend\Article.Infrastructure\obj\Debug\net8.0\ref\Article.Infrastructure.dll
+D:\Desktop\website\litzhu\LitZhu_backend\Article.Infrastructure\obj\Debug\net8.0\Article.Infrastructure.sourcelink.json

@@ -22,6 +22,21 @@ namespace Article.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Article.Domain.Entities.ArticleTags", b =>
+                {
+                    b.Property<Guid>("ArticleId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("TagId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("ArticleId", "TagId");
+
+                    b.HasIndex("TagId");
+
+                    b.ToTable("Articles_Tags", (string)null);
+                });
+
             modelBuilder.Entity("Article.Domain.Entities.Articles", b =>
                 {
                     b.Property<Guid>("Id")
@@ -58,6 +73,65 @@ namespace Article.Infrastructure.Migrations
                     b.HasIndex("Title");
 
                     b.ToTable("Articles", (string)null);
+                });
+
+            modelBuilder.Entity("Article.Domain.Entities.Tags", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreationTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletionTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("LastModificationTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("TagName")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("IsDeleted");
+
+                    b.ToTable("Tags", (string)null);
+                });
+
+            modelBuilder.Entity("Article.Domain.Entities.ArticleTags", b =>
+                {
+                    b.HasOne("Article.Domain.Entities.Articles", "Articles")
+                        .WithMany("ArticleTagsList")
+                        .HasForeignKey("ArticleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Article.Domain.Entities.Tags", "Tags")
+                        .WithMany("ArticleTagsList")
+                        .HasForeignKey("TagId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Articles");
+
+                    b.Navigation("Tags");
+                });
+
+            modelBuilder.Entity("Article.Domain.Entities.Articles", b =>
+                {
+                    b.Navigation("ArticleTagsList");
+                });
+
+            modelBuilder.Entity("Article.Domain.Entities.Tags", b =>
+                {
+                    b.Navigation("ArticleTagsList");
                 });
 #pragma warning restore 612, 618
         }
