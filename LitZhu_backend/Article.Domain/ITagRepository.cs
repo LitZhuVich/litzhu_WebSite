@@ -28,7 +28,7 @@ public interface ITagRepository
     /// </summary>
     /// <param name="tagName">标签名称</param>
     /// <returns>匹配的标签对象，如果找不到则返回 null</returns>
-    Task<Tags?> FindTagAsync(string tagName);
+    Task<Tags?> FindTagByNameAsync(string tagName);
 
     /// <summary>
     /// 创建标签的异步方法。

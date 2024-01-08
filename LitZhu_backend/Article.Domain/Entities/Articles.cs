@@ -10,7 +10,6 @@ public class Articles : AggregateRootEntity
     public List<ArticleTags> ArticleTagsList { get; private set; } = new List<ArticleTags>();
 
     private Articles() { }
-
     public Articles(string title, string content)
     {
         Title = title;
@@ -19,22 +18,19 @@ public class Articles : AggregateRootEntity
 
     public static Articles Create(string title, string content)
     {
-        Articles article = new Articles(title, content);
-        return article;
+        return new Articles(title, content);
     }
 
-    public void AddTag(ArticleTags articleTags)
+    /// <summary>
+    /// 获取当前文章的标签
+    /// </summary>
+    /// <returns></returns>
+    public List<Tags> GetTags()
     {
-        ArticleTagsList.Add(articleTags);
-    }
-
-    public void RemoveArticleTags(ArticleTags articleTags)
-    {
-        ArticleTagsList.Remove(articleTags);
-    }
-
-    public List<ArticleTags> GetArticleTags()
-    {
-        return ArticleTagsList.Where(at => at.GetArticleId() == Id).ToList();
+        var tags = ArticleTagsList
+            .Where(at => at.GetArticleId() == Id)
+            .Select(at => at.GetTag())
+            .ToList();
+        return tags;
     }
 }

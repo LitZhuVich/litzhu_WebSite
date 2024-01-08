@@ -9,3 +9,4 @@ D:\Desktop\website\litzhu\LitZhu_backend\Search.Domain\obj\Debug\net8.0\Search.D
 D:\Desktop\website\litzhu\LitZhu_backend\Search.Domain\obj\Debug\net8.0\refint\Search.Domain.dll
 D:\Desktop\website\litzhu\LitZhu_backend\Search.Domain\obj\Debug\net8.0\Search.Domain.pdb
 D:\Desktop\website\litzhu\LitZhu_backend\Search.Domain\obj\Debug\net8.0\ref\Search.Domain.dll
+D:\Desktop\website\litzhu\LitZhu_backend\Search.Domain\obj\Debug\net8.0\Search.Domain.sourcelink.json

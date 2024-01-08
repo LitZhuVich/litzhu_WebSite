@@ -9,7 +9,6 @@ public class Tags : AggregateRootEntity
     public List<ArticleTags> ArticleTagsList { get; private set; } = new List<ArticleTags>();
 
     private Tags() { }
-
     public Tags(string tagName)
     {
         TagName = tagName;
@@ -17,22 +16,19 @@ public class Tags : AggregateRootEntity
 
     public static Tags Create(string tagName)
     {
-        Tags tag = new Tags(tagName);
-        return tag;
+        return new Tags(tagName);
     }
 
-    public void AddArticleTags(ArticleTags articleTags)
+    /// <summary>
+    /// 获取当前标签的文章
+    /// </summary>
+    /// <returns></returns>
+    public List<Articles> GetArticles()
     {
-        ArticleTagsList.Add(articleTags);
-    }
-
-    public void RemoveArticleTags(ArticleTags articleTags)
-    {
-        ArticleTagsList.Remove(articleTags);
-    }
-
-    public List<ArticleTags> GetArticleTags()
-    {
-        return ArticleTagsList.Where(at => at.GetTagId() == Id).ToList();
+        var articles = ArticleTagsList
+            .Where(at => at.GetTagId() == Id)
+            .Select(at => at.GetArticle())
+            .ToList();
+        return articles;
     }
 }

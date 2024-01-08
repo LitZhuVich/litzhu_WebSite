@@ -1,4 +1,5 @@
-﻿using LitZhu.DomainCommons.Models;
+﻿using Article.Domain.Entities;
+using LitZhu.DomainCommons.Models;
 
 namespace LitZhu.WebApi.Controllers.Article.Dto;
 
