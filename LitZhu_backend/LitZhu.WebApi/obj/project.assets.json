@@ -1730,8 +1730,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Article.Domain": "1.0.0",
-          "LitZhu.Infrastructure": "1.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0"
+          "LitZhu.Infrastructure": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Article.Infrastructure.dll": {}
@@ -1758,8 +1757,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Comment.Domain": "1.0.0",
-          "LitZhu.Infrastructure": "1.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0"
+          "LitZhu.Infrastructure": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Comment.Infrastructure.dll": {}

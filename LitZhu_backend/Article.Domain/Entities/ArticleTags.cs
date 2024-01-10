@@ -8,15 +8,14 @@ public class ArticleTags
     public Tags Tags { get; private set; } = default!;
 
     private ArticleTags() { } // 添加默认的私有构造函数
-    public ArticleTags(Guid articleId, Guid tagId)
-    {
-        ArticleId = articleId;
-        TagId = tagId;
-    }
 
     public static ArticleTags Create(Guid articleId, Guid tagId)
     {
-        return new ArticleTags(articleId, tagId);
+        return new ArticleTags
+        {
+            ArticleId = articleId,
+            TagId = tagId
+        };
     }
 
     public Guid GetArticleId() => ArticleId;

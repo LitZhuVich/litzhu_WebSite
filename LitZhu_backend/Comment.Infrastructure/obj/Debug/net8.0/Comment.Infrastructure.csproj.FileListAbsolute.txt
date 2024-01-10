@@ -1,5 +1,4 @@
 D:\Desktop\website\litzhu\LitZhu_backend\Comment.Infrastructure\bin\Debug\net8.0\Comment.Infrastructure.deps.json
-D:\Desktop\website\litzhu\LitZhu_backend\Comment.Infrastructure\bin\Debug\net8.0\Comment.Infrastructure.runtimeconfig.json
 D:\Desktop\website\litzhu\LitZhu_backend\Comment.Infrastructure\bin\Debug\net8.0\Comment.Infrastructure.dll
 D:\Desktop\website\litzhu\LitZhu_backend\Comment.Infrastructure\bin\Debug\net8.0\Comment.Infrastructure.pdb
 D:\Desktop\website\litzhu\LitZhu_backend\Comment.Infrastructure\bin\Debug\net8.0\Comment.Domain.dll
@@ -17,6 +16,5 @@ D:\Desktop\website\litzhu\LitZhu_backend\Comment.Infrastructure\obj\Debug\net8.0
 D:\Desktop\website\litzhu\LitZhu_backend\Comment.Infrastructure\obj\Debug\net8.0\Comment.Infrastructure.dll
 D:\Desktop\website\litzhu\LitZhu_backend\Comment.Infrastructure\obj\Debug\net8.0\refint\Comment.Infrastructure.dll
 D:\Desktop\website\litzhu\LitZhu_backend\Comment.Infrastructure\obj\Debug\net8.0\Comment.Infrastructure.pdb
-D:\Desktop\website\litzhu\LitZhu_backend\Comment.Infrastructure\obj\Debug\net8.0\Comment.Infrastructure.genruntimeconfig.cache
 D:\Desktop\website\litzhu\LitZhu_backend\Comment.Infrastructure\obj\Debug\net8.0\ref\Comment.Infrastructure.dll
 D:\Desktop\website\litzhu\LitZhu_backend\Comment.Infrastructure\obj\Debug\net8.0\Comment.Infrastructure.sourcelink.json

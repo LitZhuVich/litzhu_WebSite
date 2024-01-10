@@ -10,15 +10,14 @@ public class Articles : AggregateRootEntity
     public List<ArticleTags> ArticleTagsList { get; private set; } = new List<ArticleTags>();
 
     private Articles() { }
-    public Articles(string title, string content)
-    {
-        Title = title;
-        Content = content;
-    }
 
     public static Articles Create(string title, string content)
     {
-        return new Articles(title, content);
+        return new Articles
+        {
+            Title = title,
+            Content = content
+        };
     }
 
     /// <summary>

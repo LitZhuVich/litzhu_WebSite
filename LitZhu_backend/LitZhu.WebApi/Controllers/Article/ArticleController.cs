@@ -3,6 +3,7 @@ using Article.Domain.Entities;
 using AutoMapper;
 using LitZhu.WebApi.Controllers.Article.Dto;
 using Microsoft.AspNetCore.Mvc;
+using User.Domain.Entities;
 
 namespace LitZhu.WebApi.Controllers.Article;
 
@@ -53,17 +54,31 @@ public class ArticleController(IArticleRepository _repository,IMapper _mapper) :
     [HttpDelete("{articleId}")]
     public async Task<IActionResult> DeleteArticleSoft(Guid articleId)
     {
-        await _repository.DeleteSoftArticleAsync(articleId);
-        await _repository.SaveArticleAsync();
-        return Ok(ApiResponse.Success("删除成功"));
+        try
+        {
+            await _repository.DeleteSoftArticleAsync(articleId);
+            await _repository.SaveArticleAsync();
+            return Ok(ApiResponse.Success("删除成功"));
+        }
+        catch (Exception e)
+        {
+            return BadRequest(ApiResponse.Fail("删除失败 :" + e.Message));
+        }
     }
 
     [HttpDelete("{articleId}/True")]
     public async Task<IActionResult> DeleteArticleTrue(Guid articleId)
     {
-        await _repository.DeleteTrueArticleAsync(articleId);
-        await _repository.SaveArticleAsync();
-        return Ok(ApiResponse.Success("删除成功"));
+        try
+        {
+            await _repository.DeleteTrueArticleAsync(articleId);
+            await _repository.SaveArticleAsync();
+            return Ok(ApiResponse.Success("删除成功"));
+        }
+        catch (Exception e)
+        {
+            return BadRequest(ApiResponse.Fail("删除失败 :" + e.Message));
+        }
     }
 
     [HttpPatch("{articleId}")]
@@ -74,7 +89,6 @@ public class ArticleController(IArticleRepository _repository,IMapper _mapper) :
         {
             return NotFound(ApiResponse.Fail("文章不存在"));
         }
-        articleEntity.NotifyModified(); // 更新最后修改时间
 
         var article = _mapper.Map<ArticleUpdateDto>(updateDto);
         _mapper.Map(article, articleEntity); // 转换赋值

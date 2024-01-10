@@ -9,14 +9,13 @@ public class Tags : AggregateRootEntity
     public List<ArticleTags> ArticleTagsList { get; private set; } = new List<ArticleTags>();
 
     private Tags() { }
-    public Tags(string tagName)
-    {
-        TagName = tagName;
-    }
 
     public static Tags Create(string tagName)
     {
-        return new Tags(tagName);
+        return new Tags
+        {
+            TagName = tagName
+        };
     }
 
     /// <summary>

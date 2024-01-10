@@ -1023,8 +1023,7 @@
       "Article.Infrastructure/1.0.0": {
         "dependencies": {
           "Article.Domain": "1.0.0",
-          "LitZhu.Infrastructure": "1.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0"
+          "LitZhu.Infrastructure": "1.0.0"
         },
         "runtime": {
           "Article.Infrastructure.dll": {}
@@ -1041,8 +1040,7 @@
       "Comment.Infrastructure/1.0.0": {
         "dependencies": {
           "Comment.Domain": "1.0.0",
-          "LitZhu.Infrastructure": "1.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0"
+          "LitZhu.Infrastructure": "1.0.0"
         },
         "runtime": {
           "Comment.Infrastructure.dll": {}

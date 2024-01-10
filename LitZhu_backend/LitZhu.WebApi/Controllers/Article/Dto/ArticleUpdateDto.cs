@@ -2,7 +2,7 @@
 
 namespace LitZhu.WebApi.Controllers.Article.Dto;
 
-public record ArticleUpdateDto(string Title, string Content);
+public record ArticleUpdateDto(string? Title, string? Content);
 
 public class ArticleUpdateDtoValidator : AbstractValidator<ArticleUpdateDto>
 {
