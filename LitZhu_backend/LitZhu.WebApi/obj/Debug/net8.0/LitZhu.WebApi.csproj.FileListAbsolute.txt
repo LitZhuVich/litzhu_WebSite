@@ -163,3 +163,6 @@ D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\User.Dom
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\User.Infrastructure.pdb
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\StackExchange.Redis.dll
+D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\LitZhu.JWT.dll
+D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\LitZhu.JWT.pdb

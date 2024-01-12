@@ -1,5 +1,6 @@
 using Article.Infrastructure;
 using Comment.Infrastructure;
+using LitZhu.JWT;
 using StackExchange.Redis;
 using User.Infrastructure;
 
@@ -29,6 +30,15 @@ builder.Services.AddSingleton(provider =>
 builder.Services.AddArticleDomainServices(); // 文章模块
 builder.Services.AddUserDomainServices(); // 用户模块
 builder.Services.AddCommentDomainServices(); // 评论模块
+builder.Services.AddJwtServices(); // JWT 模块
+
+// 读取配置文件中 Jwt 的信息，然后通过 Configuration 配置 给Controller使用
+builder.Services.Configure<JWTOptions>(builder.Configuration.GetSection("Jwt"));
+
+// 读取配置文件中的JWT配置
+var jwtOptions = builder.Configuration.GetSection("Jwt").Get<JWTOptions>();
+// 添加JWT认证
+builder.Services.AddJWTAuthentication(jwtOptions);
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -46,8 +56,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+// 鉴权
 app.UseAuthentication();
+// 授权
+app.UseAuthorization();
 
 app.MapControllers();
 

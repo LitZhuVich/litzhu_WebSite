@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LitZhu.WebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e66321c3f2ea312b48abe1b1b0b43a3f397dc397")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2966075e525c0f4484d8bf13938a002e04b49843")]
 [assembly: System.Reflection.AssemblyProductAttribute("LitZhu.WebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LitZhu.WebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

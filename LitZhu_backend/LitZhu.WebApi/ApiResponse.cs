@@ -17,6 +17,11 @@
         /// </summary>
         public object? Data { get; set; }
 
+        /// <summary>
+        /// 成功
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
         public static ApiResponse Success(object? data = null)
         {
             return new ApiResponse
@@ -27,6 +32,11 @@
             };
         }
 
+        /// <summary>
+        /// 失败
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
         public static ApiResponse Fail(object? data = null)
         {
             return new ApiResponse
