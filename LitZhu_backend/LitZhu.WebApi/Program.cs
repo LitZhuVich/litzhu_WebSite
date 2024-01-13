@@ -29,7 +29,6 @@ builder.Services.AddSingleton(provider =>
 // 添加依赖注入
 builder.Services.AddArticleDomainServices(); // 文章模块
 builder.Services.AddUserDomainServices(); // 用户模块
-builder.Services.AddCommentDomainServices(); // 评论模块
 builder.Services.AddJwtServices(); // JWT 模块
 
 // 读取配置文件中 Jwt 的信息，然后通过 Configuration 配置 给Controller使用

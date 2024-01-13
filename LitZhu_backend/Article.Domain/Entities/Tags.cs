@@ -6,7 +6,7 @@ public class Tags : AggregateRootEntity
 {
     public string TagName { get; private set; } = string.Empty; // 文章标签名
 
-    public List<ArticleTags> ArticleTagsList { get; private set; } = new List<ArticleTags>();
+    public List<ArticleTags> ArticleTagsList { get; private set; } = [];
 
     private Tags() { }
 

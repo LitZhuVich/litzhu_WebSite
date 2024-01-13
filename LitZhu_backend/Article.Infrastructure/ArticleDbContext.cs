@@ -10,4 +10,5 @@ public class ArticleDbContext(DbContextOptions<ArticleDbContext> options) : Base
     public DbSet<Articles> Articles { get; private set; }
     public DbSet<Tags> Tags { get; private set; }
     public DbSet<ArticleTags> ArticleTags { get; private set; }
+    public DbSet<Comments> Comments { get; private set; }
 }

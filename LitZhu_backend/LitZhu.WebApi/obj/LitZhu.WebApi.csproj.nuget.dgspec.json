@@ -125,127 +125,6 @@
         }
       }
     },
-    "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Comment.Domain\\Comment.Domain.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Comment.Domain\\Comment.Domain.csproj",
-        "projectName": "Comment.Domain",
-        "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Comment.Domain\\Comment.Domain.csproj",
-        "packagesPath": "C:\\Users\\25968\\.nuget\\packages\\",
-        "outputPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Comment.Domain\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\25968\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.DomainCommons\\LitZhu.DomainCommons.csproj": {
-                "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.DomainCommons\\LitZhu.DomainCommons.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Comment.Infrastructure\\Comment.Infrastructure.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Comment.Infrastructure\\Comment.Infrastructure.csproj",
-        "projectName": "Comment.Infrastructure",
-        "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Comment.Infrastructure\\Comment.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\25968\\.nuget\\packages\\",
-        "outputPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Comment.Infrastructure\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\25968\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Comment.Domain\\Comment.Domain.csproj": {
-                "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Comment.Domain\\Comment.Domain.csproj"
-              },
-              "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.Infrastructure\\LitZhu.Infrastructure.csproj": {
-                "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.Infrastructure\\LitZhu.Infrastructure.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.DomainCommons\\LitZhu.DomainCommons.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -339,11 +218,17 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.0, )"
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.1, )"
             }
           },
           "imports": [
@@ -366,14 +251,14 @@
         }
       }
     },
-    "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\LitZhu.JWT\\LitZhu.JWT.csproj": {
+    "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.JWT\\LitZhu.JWT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\LitZhu.JWT\\LitZhu.JWT.csproj",
+        "projectUniqueName": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.JWT\\LitZhu.JWT.csproj",
         "projectName": "LitZhu.JWT",
-        "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\LitZhu.JWT\\LitZhu.JWT.csproj",
+        "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.JWT\\LitZhu.JWT.csproj",
         "packagesPath": "C:\\Users\\25968\\.nuget\\packages\\",
-        "outputPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\LitZhu.JWT\\obj\\",
+        "outputPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.JWT\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\25968\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -457,20 +342,14 @@
               "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Article.Infrastructure\\Article.Infrastructure.csproj": {
                 "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Article.Infrastructure\\Article.Infrastructure.csproj"
               },
-              "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Comment.Domain\\Comment.Domain.csproj": {
-                "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Comment.Domain\\Comment.Domain.csproj"
-              },
-              "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Comment.Infrastructure\\Comment.Infrastructure.csproj": {
-                "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Comment.Infrastructure\\Comment.Infrastructure.csproj"
-              },
               "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.DomainCommons\\LitZhu.DomainCommons.csproj": {
                 "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.DomainCommons\\LitZhu.DomainCommons.csproj"
               },
               "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.Infrastructure\\LitZhu.Infrastructure.csproj": {
                 "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.Infrastructure\\LitZhu.Infrastructure.csproj"
               },
-              "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\LitZhu.JWT\\LitZhu.JWT.csproj": {
-                "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\LitZhu.JWT\\LitZhu.JWT.csproj"
+              "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.JWT\\LitZhu.JWT.csproj": {
+                "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.JWT\\LitZhu.JWT.csproj"
               },
               "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Search.Domain\\Search.Domain.csproj": {
                 "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Search.Domain\\Search.Domain.csproj"
@@ -622,8 +501,8 @@
               "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.DomainCommons\\LitZhu.DomainCommons.csproj": {
                 "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.DomainCommons\\LitZhu.DomainCommons.csproj"
               },
-              "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\LitZhu.JWT\\LitZhu.JWT.csproj": {
-                "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\LitZhu.JWT\\LitZhu.JWT.csproj"
+              "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.JWT\\LitZhu.JWT.csproj": {
+                "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.JWT\\LitZhu.JWT.csproj"
               }
             }
           }

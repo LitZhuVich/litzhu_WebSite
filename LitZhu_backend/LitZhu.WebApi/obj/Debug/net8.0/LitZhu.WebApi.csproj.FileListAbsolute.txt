@@ -136,15 +136,11 @@ D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\runtimes
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\Article.Domain.dll
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\Article.Infrastructure.dll
-D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\Comment.Domain.dll
-D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\Comment.Infrastructure.dll
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\LitZhu.DomainCommons.dll
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\LitZhu.Infrastructure.dll
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\Search.Domain.dll
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\Article.Domain.pdb
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\Article.Infrastructure.pdb
-D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\Comment.Domain.pdb
-D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\Comment.Infrastructure.pdb
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\LitZhu.DomainCommons.pdb
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\LitZhu.Infrastructure.pdb
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\Search.Domain.pdb

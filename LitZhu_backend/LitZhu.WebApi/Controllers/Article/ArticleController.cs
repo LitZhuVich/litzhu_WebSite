@@ -2,6 +2,7 @@
 using Article.Domain.Entities;
 using AutoMapper;
 using LitZhu.WebApi.Controllers.Article.Dto;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using User.Domain.Entities;
 
@@ -21,6 +22,7 @@ public class ArticleController(IArticleRepository _repository,IMapper _mapper) :
     }
 
     [HttpGet("Deleted")]
+    [Authorize]
     public async Task<ActionResult<List<ArticleDto>>> GetArticleDeleted()
     {
         var articles = await _repository.GetArticleDeletedAsync();
@@ -41,10 +43,11 @@ public class ArticleController(IArticleRepository _repository,IMapper _mapper) :
     }
 
     [HttpPost]
+    [Authorize]
     public async Task<ActionResult<ArticleDto>> CreateArticle(ArticleCreateDto createDto)
     {
         var article = _mapper.Map<Articles>(createDto);
-        var articleEntity = await _repository.CreateArticleAsync(article);
+        var articleEntity = await _repository.CreateArticleAsync(article.UserId,article);
         await _repository.SaveArticleAsync();
 
         var articleDto = _mapper.Map<ArticleDto>(articleEntity);
@@ -52,6 +55,7 @@ public class ArticleController(IArticleRepository _repository,IMapper _mapper) :
     }
 
     [HttpDelete("{articleId}")]
+    [Authorize]
     public async Task<IActionResult> DeleteArticleSoft(Guid articleId)
     {
         try
@@ -67,6 +71,7 @@ public class ArticleController(IArticleRepository _repository,IMapper _mapper) :
     }
 
     [HttpDelete("{articleId}/True")]
+    [Authorize]
     public async Task<IActionResult> DeleteArticleTrue(Guid articleId)
     {
         try
@@ -82,6 +87,7 @@ public class ArticleController(IArticleRepository _repository,IMapper _mapper) :
     }
 
     [HttpPatch("{articleId}")]
+    [Authorize]
     public async Task<ActionResult<ArticleDto>> UpdateArticle(Guid articleId,ArticleUpdateDto updateDto)
     {
         var articleEntity = await _repository.FindArticleAsync(articleId);

@@ -25,9 +25,10 @@ public interface IArticleRepository
     /// <summary>
     /// 异步创建新文章
     /// </summary>
-    /// <param name="createDto">创建文章的DTO</param>
+    /// <param name="userId">用户ID</param>
+    /// <param name="article">文章</param>
     /// <returns>创建的文章</returns>
-    Task<Articles> CreateArticleAsync(Articles article);
+    Task<Articles> CreateArticleAsync(Guid userId, Articles article);
 
     /// <summary>
     /// 异步更新文章
