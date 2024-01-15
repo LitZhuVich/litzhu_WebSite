@@ -18,6 +18,21 @@ public class Tags : AggregateRootEntity
         };
     }
 
+    public void Update(Dictionary<string, string> update)
+    {
+        foreach (var item in update)
+        {
+            switch (item.Key)
+            {
+                case "tagName":
+                    SetTagName(item.Value);
+                    break;
+                default:
+                    throw new Exception("无效的参数");
+            }
+        }
+    }
+
     /// <summary>
     /// 获取当前标签的文章
     /// </summary>
@@ -29,5 +44,10 @@ public class Tags : AggregateRootEntity
             .Select(at => at.GetArticle())
             .ToList();
         return articles;
+    }
+
+    public void SetTagName(string tagName)
+    {
+        TagName = tagName;
     }
 }

@@ -20,6 +20,15 @@ public class AggregateRootEntity : BaseEntity, IAggregateRoot, ISoftDelete, IHas
     }
 
     /// <summary>
+    /// 回复软删除
+    /// </summary>
+    public void Recover()
+    {
+        IsDeleted = false;
+        DeletionTime = null;
+    }
+
+    /// <summary>
     /// 更新修改时间
     /// </summary>
     public void NotifyModified()

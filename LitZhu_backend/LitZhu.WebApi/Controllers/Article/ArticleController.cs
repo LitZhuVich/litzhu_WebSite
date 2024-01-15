@@ -1,33 +1,31 @@
 ﻿using Article.Domain;
+using Article.Domain.DTO;
 using Article.Domain.Entities;
 using AutoMapper;
-using LitZhu.WebApi.Controllers.Article.Dto;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using User.Domain.Entities;
 
 namespace LitZhu.WebApi.Controllers.Article;
 
 [Route("api/[controller]")]
 [ApiController]
-public class ArticleController(IArticleRepository _repository,IMapper _mapper) : ControllerBase
+public class ArticleController(IArticleRepository _repository, IMapper _mapper) : ControllerBase
 {
-   
     [HttpGet]
-    public async Task<ActionResult<List<ArticleDto>>> GetArticle()
+    public async Task<ActionResult<List<ArticleDto>>> GetArticle([FromQuery] ArticleParametersDto parameters)
     {
-        var articles = await _repository.GetArticleAsync();
+        var articles = await _repository.GetArticleAsync(parameters);
         var articlesDto = _mapper.Map<List<ArticleDto>>(articles);
-        return Ok(ApiResponse.Success(articlesDto));
+        return Ok(R.Success(articlesDto));
     }
 
     [HttpGet("Deleted")]
     [Authorize]
-    public async Task<ActionResult<List<ArticleDto>>> GetArticleDeleted()
+    public async Task<ActionResult<List<ArticleDto>>> GetArticleDeleted([FromQuery] ArticleParametersDto parameters)
     {
-        var articles = await _repository.GetArticleDeletedAsync();
+        var articles = await _repository.GetArticleDeletedAsync(parameters);
         var articlesDto = _mapper.Map<List<ArticleDto>>(articles);
-        return Ok(ApiResponse.Success(articlesDto));
+        return Ok(R.Success(articlesDto));
     }
 
     [HttpGet("{articleId}")]
@@ -36,10 +34,10 @@ public class ArticleController(IArticleRepository _repository,IMapper _mapper) :
         var articles = await _repository.FindArticleAsync(articleId);
         if (articles == null)
         {
-            return NotFound(ApiResponse.Fail("文章不存在"));
+            return NotFound(R.Fail("文章不存在"));
         }
         var articlesDto = _mapper.Map<ArticleDto>(articles);
-        return Ok(ApiResponse.Success(articlesDto));
+        return Ok(R.Success(articlesDto));
     }
 
     [HttpPost]
@@ -47,11 +45,11 @@ public class ArticleController(IArticleRepository _repository,IMapper _mapper) :
     public async Task<ActionResult<ArticleDto>> CreateArticle(ArticleCreateDto createDto)
     {
         var article = _mapper.Map<Articles>(createDto);
-        var articleEntity = await _repository.CreateArticleAsync(article.UserId,article);
+        var articleEntity = await _repository.CreateArticleAsync(article.UserId, article);
         await _repository.SaveArticleAsync();
 
         var articleDto = _mapper.Map<ArticleDto>(articleEntity);
-        return Ok(ApiResponse.Success(articleDto));
+        return Ok(R.Success(articleDto));
     }
 
     [HttpDelete("{articleId}")]
@@ -62,11 +60,11 @@ public class ArticleController(IArticleRepository _repository,IMapper _mapper) :
         {
             await _repository.DeleteSoftArticleAsync(articleId);
             await _repository.SaveArticleAsync();
-            return Ok(ApiResponse.Success("删除成功"));
+            return Ok(R.Success("删除成功"));
         }
         catch (Exception e)
         {
-            return BadRequest(ApiResponse.Fail("删除失败 :" + e.Message));
+            return BadRequest(R.Fail("删除失败 :" + e.Message));
         }
     }
 
@@ -78,31 +76,29 @@ public class ArticleController(IArticleRepository _repository,IMapper _mapper) :
         {
             await _repository.DeleteTrueArticleAsync(articleId);
             await _repository.SaveArticleAsync();
-            return Ok(ApiResponse.Success("删除成功"));
+            return Ok(R.Success("删除成功"));
         }
         catch (Exception e)
         {
-            return BadRequest(ApiResponse.Fail("删除失败 :" + e.Message));
+            return BadRequest(R.Fail("删除失败 :" + e.Message));
         }
     }
 
     [HttpPatch("{articleId}")]
     [Authorize]
-    public async Task<ActionResult<ArticleDto>> UpdateArticle(Guid articleId,ArticleUpdateDto updateDto)
+    public async Task<ActionResult> UpdateArticle(Guid articleId, Dictionary<string, string> updateDto)
     {
-        var articleEntity = await _repository.FindArticleAsync(articleId);
-        if (articleEntity == null)
+        var article = await _repository.FindArticleAsync(articleId);
+        if (article == null)
         {
-            return NotFound(ApiResponse.Fail("文章不存在"));
+            return NotFound(R.Fail("文章不存在"));
         }
+        article.Update(updateDto); // 修改文章的数据
 
-        var article = _mapper.Map<ArticleUpdateDto>(updateDto);
-        _mapper.Map(article, articleEntity); // 转换赋值
-
-        var articleUpdatedEntity = await _repository.UpdateArticleAsync(articleEntity);
+        var articleUpdatedEntity = await _repository.UpdateArticleAsync(article);
         await _repository.SaveArticleAsync();
 
-        var articleUpdatedDto = _mapper.Map<ArticleDto>(articleUpdatedEntity);
-        return Ok(ApiResponse.Success(articleUpdatedDto));
+        var articleDto = _mapper.Map<ArticleDto>(articleUpdatedEntity);
+        return Ok(R.Success(articleDto));
     }
 }

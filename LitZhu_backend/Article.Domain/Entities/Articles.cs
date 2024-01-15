@@ -24,6 +24,30 @@ public class Articles : AggregateRootEntity
         };
     }
 
+    public void Update(Dictionary<string, string> update)
+    {
+        foreach (var item in update)
+        {
+            switch (item.Key)
+            {
+                case "title":
+                    SetTitle(item.Value);
+                    break;
+                case "content":
+                    SetContent(item.Value);
+                    break;
+                case "likes":
+                    SetLike(int.Parse(item.Value));
+                    break;
+                case "views":
+                    SetView(int.Parse(item.Value));
+                    break;
+                default:
+                    throw new Exception("无效的参数");
+            }
+        }
+    }
+
     /// <summary>
     /// 获取当前文章的标签
     /// </summary>
@@ -43,12 +67,25 @@ public class Articles : AggregateRootEntity
     /// <returns></returns>
     public List<Comments> GetComments() => Comments.Where(c => c.ArticleId == Id).ToList();
 
-    // 文章点赞
-    public void AddLikes() => Likes++;
-    public void RedLikes() => Likes--;
-
-    // 文章浏览
-    public void AddViews() => Views++;
-    public void RedViews() => Views--;
+    public void SetTitle(string title)
+    {
+        if (title.Length >= 50)
+        {
+            throw new ArgumentOutOfRangeException("标题必须小于等于50");
+        }
+        Title = title;
+    }
+    public void SetContent(string content)
+    {
+        Content = content;
+    }
+    public void SetLike(int like)
+    {
+        Likes = like;
+    }
+    public void SetView(int view)
+    {
+        Views = view;
+    }
 
 }
