@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LitZhu.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1ca32bbfed3c766b625bcfa2cdd822c2ae476b5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb9fe6e8d390c132e3307ee1263d49458e3beaab")]
 [assembly: System.Reflection.AssemblyProductAttribute("LitZhu.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LitZhu.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -75,16 +75,27 @@ public class Articles : AggregateRootEntity
         }
         Title = title;
     }
+
     public void SetContent(string content)
     {
         Content = content;
     }
+
     public void SetLike(int like)
     {
+        if (like < 0)
+        {
+            throw new ArgumentOutOfRangeException("点赞不能小于0");
+        }
         Likes = like;
     }
+
     public void SetView(int view)
     {
+        if (view < 0)
+        {
+            throw new ArgumentOutOfRangeException("浏览量不能小于0");
+        }
         Views = view;
     }
 

@@ -4,7 +4,8 @@ using System.Globalization;
 
 namespace LitZhu.Infrastructure.EFCore
 {
-    public abstract class BaseDbContextFactory<TContext> : IDesignTimeDbContextFactory<TContext> where TContext : DbContext
+    public abstract class BaseDbContextFactory<TContext> 
+        : IDesignTimeDbContextFactory<TContext> where TContext : DbContext
     {
         public TContext CreateDbContext(string[] args)
         {

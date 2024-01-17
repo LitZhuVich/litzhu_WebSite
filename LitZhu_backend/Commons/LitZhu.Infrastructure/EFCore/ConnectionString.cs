@@ -14,5 +14,4 @@ public class ConnectionString
     {
         SqlServerConnection = connectionStr;
     }
-
 }
