@@ -1,0 +1,186 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\User.Domain\\User.Domain.csproj": {}
+  },
+  "projects": {
+    "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.DomainCommons\\LitZhu.DomainCommons.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.DomainCommons\\LitZhu.DomainCommons.csproj",
+        "projectName": "LitZhu.DomainCommons",
+        "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.DomainCommons\\LitZhu.DomainCommons.csproj",
+        "packagesPath": "C:\\Users\\25968\\.nuget\\packages\\",
+        "outputPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.DomainCommons\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\25968\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.JWT\\LitZhu.JWT.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.JWT\\LitZhu.JWT.csproj",
+        "projectName": "LitZhu.JWT",
+        "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.JWT\\LitZhu.JWT.csproj",
+        "packagesPath": "C:\\Users\\25968\\.nuget\\packages\\",
+        "outputPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.JWT\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\25968\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\User.Domain\\User.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\User.Domain\\User.Domain.csproj",
+        "projectName": "User.Domain",
+        "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\User.Domain\\User.Domain.csproj",
+        "packagesPath": "C:\\Users\\25968\\.nuget\\packages\\",
+        "outputPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\User.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\25968\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.DomainCommons\\LitZhu.DomainCommons.csproj": {
+                "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.DomainCommons\\LitZhu.DomainCommons.csproj"
+              },
+              "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.JWT\\LitZhu.JWT.csproj": {
+                "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.JWT\\LitZhu.JWT.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
