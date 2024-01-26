@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Article.Domain\Article.Domain.csproj" />
     <ProjectReference Include="..\Article.Infrastructure\Article.Infrastructure.csproj" />
+    <ProjectReference Include="..\Commons\LitZhu,Markdown\LitZhu,Markdown.csproj" />
     <ProjectReference Include="..\Commons\LitZhu.DomainCommons\LitZhu.DomainCommons.csproj" />
     <ProjectReference Include="..\Commons\LitZhu.Infrastructure\LitZhu.Infrastructure.csproj" />
     <ProjectReference Include="..\Commons\LitZhu.JWT\LitZhu.JWT.csproj" />

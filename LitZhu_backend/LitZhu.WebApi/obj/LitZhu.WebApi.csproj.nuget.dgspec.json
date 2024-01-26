@@ -90,6 +90,9 @@
               "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Article.Domain\\Article.Domain.csproj": {
                 "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Article.Domain\\Article.Domain.csproj"
               },
+              "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu,Markdown\\LitZhu,Markdown.csproj": {
+                "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu,Markdown\\LitZhu,Markdown.csproj"
+              },
               "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.Infrastructure\\LitZhu.Infrastructure.csproj": {
                 "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.Infrastructure\\LitZhu.Infrastructure.csproj"
               }
@@ -105,6 +108,71 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu,Markdown\\LitZhu,Markdown.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu,Markdown\\LitZhu,Markdown.csproj",
+        "projectName": "LitZhu,Markdown",
+        "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu,Markdown\\LitZhu,Markdown.csproj",
+        "packagesPath": "C:\\Users\\25968\\.nuget\\packages\\",
+        "outputPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu,Markdown\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\25968\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Markdig": {
+              "target": "Package",
+              "version": "[0.34.0, )"
+            },
+            "Markdig.SyntaxHighlighting": {
+              "target": "Package",
+              "version": "[1.1.7, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -341,6 +409,9 @@
               },
               "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Article.Infrastructure\\Article.Infrastructure.csproj": {
                 "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Article.Infrastructure\\Article.Infrastructure.csproj"
+              },
+              "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu,Markdown\\LitZhu,Markdown.csproj": {
+                "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu,Markdown\\LitZhu,Markdown.csproj"
               },
               "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.DomainCommons\\LitZhu.DomainCommons.csproj": {
                 "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.DomainCommons\\LitZhu.DomainCommons.csproj"

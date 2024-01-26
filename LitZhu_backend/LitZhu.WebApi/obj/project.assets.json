@@ -75,6 +75,15 @@
           }
         }
       },
+      "ColorCode.Portable/1.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/portable45-net45+win8+wp8+wpa81/ColorCode.dll": {}
+        },
+        "runtime": {
+          "lib/portable45-net45+win8+wp8+wpa81/ColorCode.dll": {}
+        }
+      },
       "FluentValidation/11.9.0": {
         "type": "package",
         "compile": {
@@ -116,6 +125,32 @@
           "lib/net6.0/Humanizer.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Markdig/0.34.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Markdig.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Markdig.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Markdig.SyntaxHighlighting/1.1.7": {
+        "type": "package",
+        "dependencies": {
+          "ColorCode.Portable": "1.0.3",
+          "Markdig": "0.11.0"
+        },
+        "compile": {
+          "lib/portable45-net45+win8+wp8+wpa81/Markdig.SyntaxHighlighting.dll": {}
+        },
+        "runtime": {
+          "lib/portable45-net45+win8+wp8+wpa81/Markdig.SyntaxHighlighting.dll": {}
         }
       },
       "Microsoft.AspNetCore.Authentication.JwtBearer/8.0.1": {
@@ -1702,6 +1737,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "Article.Domain": "1.0.0",
+          "LitZhu,Markdown": "1.0.0",
           "LitZhu.Infrastructure": "1.0.0"
         },
         "compile": {
@@ -1709,6 +1745,20 @@
         },
         "runtime": {
           "bin/placeholder/Article.Infrastructure.dll": {}
+        }
+      },
+      "LitZhu,Markdown/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Markdig": "0.34.0",
+          "Markdig.SyntaxHighlighting": "1.1.7"
+        },
+        "compile": {
+          "bin/placeholder/LitZhu,Markdown.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LitZhu,Markdown.dll": {}
         }
       },
       "LitZhu.DomainCommons/1.0.0": {
@@ -1859,6 +1909,18 @@
         "lib/netstandard2.0/Azure.Identity.xml"
       ]
     },
+    "ColorCode.Portable/1.0.3": {
+      "sha512": "GYX9N87XT7L2+/SL3OFSxFn2tKnnsmhBkCXrn3o+R2mKTLD2R/PuSasBnsfa0tSSiXNjs8pxVPxI13kU0j28qA==",
+      "type": "package",
+      "path": "colorcode.portable/1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "colorcode.portable.1.0.3.nupkg.sha512",
+        "colorcode.portable.nuspec",
+        "lib/portable45-net45+win8+wp8+wpa81/ColorCode.dll"
+      ]
+    },
     "FluentValidation/11.9.0": {
       "sha512": "VneVlTvwYDkfHV5av3QrQ0amALgrLX6LV94wlYyEsh0B/klJBW7C8y2eAtj5tOZ3jH6CAVpr4s1ZGgew/QWyig==",
       "type": "package",
@@ -1917,6 +1979,41 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Markdig/0.34.0": {
+      "sha512": "kUS8Y/oW2Cshwq3kv08Lz5hpMjt9MuAaDIGxv86d0RtEUUe4xKKXxdZYS7bV0ZXRfeAAOfjYIrt7zybcIOYvmg==",
+      "type": "package",
+      "path": "markdig/0.34.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net462/Markdig.dll",
+        "lib/net462/Markdig.xml",
+        "lib/net6.0/Markdig.dll",
+        "lib/net6.0/Markdig.xml",
+        "lib/net8.0/Markdig.dll",
+        "lib/net8.0/Markdig.xml",
+        "lib/netstandard2.0/Markdig.dll",
+        "lib/netstandard2.0/Markdig.xml",
+        "lib/netstandard2.1/Markdig.dll",
+        "lib/netstandard2.1/Markdig.xml",
+        "markdig.0.34.0.nupkg.sha512",
+        "markdig.nuspec",
+        "markdig.png",
+        "readme.md"
+      ]
+    },
+    "Markdig.SyntaxHighlighting/1.1.7": {
+      "sha512": "BDCVfU194qruwOSspgK9S0vOco1xZfXYExegf64yzTs99XD1+3032FRz3fDFepcDMz0PSklMHGMqm0IlI/395Q==",
+      "type": "package",
+      "path": "markdig.syntaxhighlighting/1.1.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/portable45-net45+win8+wp8+wpa81/Markdig.SyntaxHighlighting.dll",
+        "markdig.syntaxhighlighting.1.1.7.nupkg.sha512",
+        "markdig.syntaxhighlighting.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authentication.JwtBearer/8.0.1": {
@@ -4672,6 +4769,11 @@
       "path": "../Article.Infrastructure/Article.Infrastructure.csproj",
       "msbuildProject": "../Article.Infrastructure/Article.Infrastructure.csproj"
     },
+    "LitZhu,Markdown/1.0.0": {
+      "type": "project",
+      "path": "../Commons/LitZhu,Markdown/LitZhu,Markdown.csproj",
+      "msbuildProject": "../Commons/LitZhu,Markdown/LitZhu,Markdown.csproj"
+    },
     "LitZhu.DomainCommons/1.0.0": {
       "type": "project",
       "path": "../Commons/LitZhu.DomainCommons/LitZhu.DomainCommons.csproj",
@@ -4709,6 +4811,7 @@
       "Article.Infrastructure >= 1.0.0",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
       "FluentValidation.DependencyInjectionExtensions >= 11.9.0",
+      "LitZhu,Markdown >= 1.0.0",
       "LitZhu.DomainCommons >= 1.0.0",
       "LitZhu.Infrastructure >= 1.0.0",
       "LitZhu.JWT >= 1.0.0",
@@ -4752,6 +4855,9 @@
             },
             "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Article.Infrastructure\\Article.Infrastructure.csproj": {
               "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Article.Infrastructure\\Article.Infrastructure.csproj"
+            },
+            "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu,Markdown\\LitZhu,Markdown.csproj": {
+              "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu,Markdown\\LitZhu,Markdown.csproj"
             },
             "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.DomainCommons\\LitZhu.DomainCommons.csproj": {
               "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu.DomainCommons\\LitZhu.DomainCommons.csproj"
@@ -4829,5 +4935,27 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1”而不是项目目标框架“net8.0”还原包“ColorCode.Portable 1.0.3”。此包可能与项目不完全兼容。",
+      "libraryId": "ColorCode.Portable",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1”而不是项目目标框架“net8.0”还原包“Markdig.SyntaxHighlighting 1.1.7”。此包可能与项目不完全兼容。",
+      "libraryId": "Markdig.SyntaxHighlighting",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

@@ -19,7 +19,7 @@ public class UserRepository(UserDbContext _db) : IUserRepository
         }
         await _db.UserLoginHistory.AddAsync(UserLoginHistory.CreateEmailLoginHistory(userId, email, message));
     }
-
+    
     public async Task AddNewLoginByUsernameHistoryAsync(string username, string message)
     {
         var user = await FindUserByUsernameAsync(username);

@@ -18,3 +18,5 @@ D:\Desktop\website\litzhu\LitZhu_backend\Article.Infrastructure\obj\Debug\net8.0
 D:\Desktop\website\litzhu\LitZhu_backend\Article.Infrastructure\obj\Debug\net8.0\Article.Infrastructure.pdb
 D:\Desktop\website\litzhu\LitZhu_backend\Article.Infrastructure\obj\Debug\net8.0\ref\Article.Infrastructure.dll
 D:\Desktop\website\litzhu\LitZhu_backend\Article.Infrastructure\obj\Debug\net8.0\Article.Infrastructure.sourcelink.json
+D:\Desktop\website\litzhu\LitZhu_backend\Article.Infrastructure\bin\Debug\net8.0\LitZhu,Markdown.dll
+D:\Desktop\website\litzhu\LitZhu_backend\Article.Infrastructure\bin\Debug\net8.0\LitZhu,Markdown.pdb

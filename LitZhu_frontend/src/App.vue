@@ -1,7 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+	import FrontView from "./views/FrontView.vue";
+</script>
 
 <template>
-	<router-view name="main"></router-view>
+	<FrontView></FrontView>
 </template>
 
 <style scoped></style>

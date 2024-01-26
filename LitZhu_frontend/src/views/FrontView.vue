@@ -1,11 +1,21 @@
 <template>
 	<Header></Header>
-	<Content></Content>
+	<div class="main">
+		<router-view name="main"></router-view>
+	</div>
 </template>
 
 <script setup lang="ts">
 	import Header from "./Front/Header.vue";
-	import Content from "./Front/Content.vue";
 </script>
 
-<style scoped></style>
+<style scoped>
+	@media (max-width: 768px) {
+		.main {
+			margin: 1.5rem 2rem 0 2rem !important;
+		}
+	}
+	.main {
+		margin: 1.5rem 8rem 0 8rem;
+	}
+</style>

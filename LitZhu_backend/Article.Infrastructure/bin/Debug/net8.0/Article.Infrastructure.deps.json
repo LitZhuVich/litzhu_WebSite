@@ -9,6 +9,7 @@
       "Article.Infrastructure/1.0.0": {
         "dependencies": {
           "Article.Domain": "1.0.0",
+          "LitZhu,Markdown": "1.0.0",
           "LitZhu.Infrastructure": "1.0.0"
         },
         "runtime": {
@@ -46,6 +47,34 @@
           "lib/netstandard2.0/Azure.Identity.dll": {
             "assemblyVersion": "1.7.0.0",
             "fileVersion": "1.700.22.46903"
+          }
+        }
+      },
+      "ColorCode.Portable/1.0.3": {
+        "runtime": {
+          "lib/portable45-net45+win8+wp8+wpa81/ColorCode.dll": {
+            "assemblyVersion": "1.0.3.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Markdig/0.34.0": {
+        "runtime": {
+          "lib/net8.0/Markdig.dll": {
+            "assemblyVersion": "0.34.0.0",
+            "fileVersion": "0.34.0.0"
+          }
+        }
+      },
+      "Markdig.SyntaxHighlighting/1.1.7": {
+        "dependencies": {
+          "ColorCode.Portable": "1.0.3",
+          "Markdig": "0.34.0"
+        },
+        "runtime": {
+          "lib/portable45-net45+win8+wp8+wpa81/Markdig.SyntaxHighlighting.dll": {
+            "assemblyVersion": "1.1.7.0",
+            "fileVersion": "1.1.7.0"
           }
         }
       },
@@ -560,6 +589,15 @@
           "Article.Domain.dll": {}
         }
       },
+      "LitZhu,Markdown/1.0.0": {
+        "dependencies": {
+          "Markdig": "0.34.0",
+          "Markdig.SyntaxHighlighting": "1.1.7"
+        },
+        "runtime": {
+          "LitZhu,Markdown.dll": {}
+        }
+      },
       "LitZhu.DomainCommons/1.0.0": {
         "runtime": {
           "LitZhu.DomainCommons.dll": {}
@@ -595,6 +633,27 @@
       "sha512": "sha512-eHEiCO/8+MfNc9nH5dVew/+FvxdaGrkRL4OMNwIz0W79+wtJyEoeRlXJ3SrXhoy9XR58geBYKmzMR83VO7bcAw==",
       "path": "azure.identity/1.7.0",
       "hashPath": "azure.identity.1.7.0.nupkg.sha512"
+    },
+    "ColorCode.Portable/1.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GYX9N87XT7L2+/SL3OFSxFn2tKnnsmhBkCXrn3o+R2mKTLD2R/PuSasBnsfa0tSSiXNjs8pxVPxI13kU0j28qA==",
+      "path": "colorcode.portable/1.0.3",
+      "hashPath": "colorcode.portable.1.0.3.nupkg.sha512"
+    },
+    "Markdig/0.34.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kUS8Y/oW2Cshwq3kv08Lz5hpMjt9MuAaDIGxv86d0RtEUUe4xKKXxdZYS7bV0ZXRfeAAOfjYIrt7zybcIOYvmg==",
+      "path": "markdig/0.34.0",
+      "hashPath": "markdig.0.34.0.nupkg.sha512"
+    },
+    "Markdig.SyntaxHighlighting/1.1.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BDCVfU194qruwOSspgK9S0vOco1xZfXYExegf64yzTs99XD1+3032FRz3fDFepcDMz0PSklMHGMqm0IlI/395Q==",
+      "path": "markdig.syntaxhighlighting/1.1.7",
+      "hashPath": "markdig.syntaxhighlighting.1.1.7.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "type": "package",
@@ -961,6 +1020,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "Article.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LitZhu,Markdown/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

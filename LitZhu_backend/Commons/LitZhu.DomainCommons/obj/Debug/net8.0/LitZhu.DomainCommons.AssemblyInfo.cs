@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LitZhu.DomainCommons")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+128b0f19d7d677940f98cb78d11dcfd370cd5b0e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc69020922e53cc59feac7f3556f02a28121862e")]
 [assembly: System.Reflection.AssemblyProductAttribute("LitZhu.DomainCommons")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LitZhu.DomainCommons")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

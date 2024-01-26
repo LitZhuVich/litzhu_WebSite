@@ -33,6 +33,9 @@ declare module 'vue' {
     ElText: typeof import('element-plus/es')['ElText']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TagArticle: typeof import('./src/components/TagArticle.vue')['default']
+    Tags: typeof import('./src/components/Tags.vue')['default']
     Title: typeof import('./src/components/Title.vue')['default']
+    UserInfo: typeof import('./src/components/UserInfo.vue')['default']
   }
 }

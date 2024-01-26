@@ -1,6 +1,7 @@
 ﻿using Article.Domain;
 using Article.Domain.DTO;
 using Article.Domain.Entities;
+using LitZhu_Markdown;
 using Microsoft.EntityFrameworkCore;
 
 namespace Article.Infrastructure.Repositories;
@@ -17,7 +18,8 @@ public class ArticleRepository(ArticleDbContext _db) : IArticleRepository
 
     public async Task<Articles> CreateArticleAsync(Guid userId, Articles article)
     {
-        var articleCreateEntity = Articles.Create(userId, article.Title, article.Content);
+        string html = new MdService().MdConvertToHtml(article.Content);
+        var articleCreateEntity = Articles.Create(userId, article.Title, html);
         var newArticle = await _db.Articles.AddAsync(articleCreateEntity);
         return newArticle.Entity;
     }

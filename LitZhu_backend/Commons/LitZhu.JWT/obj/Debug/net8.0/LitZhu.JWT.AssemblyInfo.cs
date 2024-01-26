@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LitZhu.JWT")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb9fe6e8d390c132e3307ee1263d49458e3beaab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc69020922e53cc59feac7f3556f02a28121862e")]
 [assembly: System.Reflection.AssemblyProductAttribute("LitZhu.JWT")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LitZhu.JWT")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

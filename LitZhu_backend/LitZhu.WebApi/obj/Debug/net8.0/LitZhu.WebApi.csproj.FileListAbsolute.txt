@@ -162,3 +162,8 @@ D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\StackExc
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\LitZhu.JWT.dll
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\LitZhu.JWT.pdb
+D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\Markdig.dll
+D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\LitZhu,Markdown.dll
+D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\LitZhu,Markdown.pdb
+D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\ColorCode.dll
+D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\Markdig.SyntaxHighlighting.dll
