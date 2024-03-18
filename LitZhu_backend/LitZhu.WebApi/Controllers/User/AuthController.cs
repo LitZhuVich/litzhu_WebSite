@@ -44,18 +44,17 @@ public class AuthController(
     {
         VerifyEmailCodeResult result = await _userDomainService.VerifyLoginEmailByCodeAsync(req.Email, req.Code);
 
-
         switch (result)
         {
             case VerifyEmailCodeResult.Ok:
                 return Ok(R.Success("验证成功"));
             case VerifyEmailCodeResult.EmailNotFound:
             case VerifyEmailCodeResult.CodeError:
-                return BadRequest(R.Fail("验证失败"));
+                return Ok(R.Fail("验证失败"));
             case VerifyEmailCodeResult.Lockout:
-                return BadRequest(R.Fail("被锁定"));
+                return Ok(R.Fail("被锁定"));
             default:
-                return BadRequest(R.Fail("未知值"));
+                return Ok(R.Fail("未知值"));
         }
     }
 
@@ -69,26 +68,29 @@ public class AuthController(
     {
         (VerifyUsernamePasswordResult result, string? token) = await _userDomainService.VerifyLoginUsernameByPasswordAsync(req.Username, req.Password);
 
+        _logger.LogDebug("进行登录");
+
         switch (result)
         {
             case VerifyUsernamePasswordResult.Ok:
                 string key = $"LitZhu_{req.Username}_Token";
                 await _cache.GetDatabase(1).StringSetAsync(key, token); // 添加 token 到缓存 Redis
-                return Ok(R.Success(token));
+                return Ok(R.Success(new { token = token, expires_in = 3600 }));
             case VerifyUsernamePasswordResult.UsernameNotFound:
+                return Ok(R.Fail("登陆失败"));
             case VerifyUsernamePasswordResult.PasswordError:
-                return BadRequest(R.Fail("登陆失败"));
+                return Ok(R.Fail("密码错误"));
             case VerifyUsernamePasswordResult.Lockout:
-                return BadRequest(R.Fail("被锁定"));
+                return Ok(R.Fail("被锁定"));
             default:
-                return BadRequest(R.Fail("未知值"));
+                return Ok(R.Fail("未知值"));
         }
     }
 
     /// <summary>
     /// 注销用户
     /// </summary>
-    /// <param name="req"></param>
+    /// <param name="token"></param>
     /// <returns></returns>
     [HttpDelete("Logout/{token}")]
     [Authorize]
@@ -104,6 +106,18 @@ public class AuthController(
         // 删除缓存
         await _cache.GetDatabase(1).KeyDeleteAsync(key);
         return Ok(R.Success("注销成功"));
+    }
+
+    /// <summary>
+    /// 根据Token解析用户
+    /// </summary>
+    /// <param name="token"></param>
+    /// <returns></returns>
+    [HttpGet("Show")]
+    public IActionResult ShowAuthUser(string token)
+    {
+        var user = _userDomainService.ParseToken(token);
+        return Ok(R.Success(user));
     }
 }
 

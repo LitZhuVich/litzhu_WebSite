@@ -1,23 +1,22 @@
-import { createRouter, createWebHistory } from "vue-router";
-
+import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import { App } from "vue";
 
-const routes = [
+const routes: RouteRecordRaw[] = [
 	{
 		path: "/",
 		name: "Content",
 		components: {
-			main: () => import("../views/Front/Content.vue"),
+			main: () => import("../views/Content.vue"),
 		},
 		meta: {
 			name: "首页",
 		},
 	},
 	{
-		path: "/article/:articleTitle",
+		path: "/article/:articleId",
 		name: "ArticleDesc",
 		components: {
-			main: () => import("../views/Front/ArticleDesc.vue"),
+			main: () => import("../views/ArticleDesc.vue"),
 		},
 		meta: {
 			name: "博客详情",
@@ -27,7 +26,7 @@ const routes = [
 		path: "/tags",
 		name: "Tags",
 		components: {
-			main: () => import("../views/Front/Tags.vue"),
+			main: () => import("../views/Article/Tags.vue"),
 		},
 		meta: {
 			name: "标签页",
@@ -37,7 +36,7 @@ const routes = [
 		path: "/tags/:tagName",
 		name: "TagArticles",
 		components: {
-			main: () => import("../views/Front/TagArticles.vue"),
+			main: () => import("../views/TagArticles.vue"),
 		},
 		meta: {
 			name: "标签文章",
@@ -47,7 +46,7 @@ const routes = [
 		path: "/message",
 		name: "Message",
 		components: {
-			main: () => import("../views/Front/Message.vue"),
+			main: () => import("../views/Other/Message.vue"),
 		},
 		meta: {
 			name: "留言板",
@@ -57,7 +56,7 @@ const routes = [
 		path: "/chat",
 		name: "Chat",
 		components: {
-			main: () => import("../views/Front/Chat.vue"),
+			main: () => import("../views/Other/Chat.vue"),
 		},
 		meta: {
 			name: "聊天室",
@@ -67,15 +66,34 @@ const routes = [
 		path: "/animation",
 		name: "Animation",
 		components: {
-			main: () => import("../views/Front/Animation.vue"),
+			main: () => import("../views/Other/Animation.vue"),
 		},
 		meta: {
 			name: "追番列表",
 		},
 	},
+	{
+		path: "/login",
+		name: "Login",
+		components: {
+			main: () => import("../views/Auth/Login.vue"),
+		},
+		meta: {
+			name: "登录",
+		},
+	},
+	{
+		path: "/register",
+		name: "Register",
+		components: {
+			main: () => import("../views/Auth/Register.vue"),
+		},
+		meta: {
+			name: "注册",
+		},
+	},
 ];
 
-// 创建路由
 const router = createRouter({
 	// 使用历史路由
 	history: createWebHistory(),

@@ -4,8 +4,10 @@ namespace Article.Domain.Entities;
 
 public class Articles : AggregateRootEntity
 {
+    public string Image { get; private set; } = string.Empty; // 图片
     public string Title { get; private set; } = string.Empty; // 文章标题
     public string Content { get; private set; } = string.Empty; // 文章内容
+    public string Desc { get; private set; } = string.Empty; // 文章简介
     public Guid UserId { get; private set; } // 作者Id
     public int Likes { get; private set; } // 点赞数
     public int Views { get; private set; } // 浏览数
@@ -14,13 +16,15 @@ public class Articles : AggregateRootEntity
 
     private Articles() { }
 
-    public static Articles Create(Guid userId, string title, string content)
+    public static Articles Create(Guid userId, string image, string title, string content, string desc)
     {
         return new Articles
         {
             UserId = userId,
+            Image = image,
             Title = title,
-            Content = content
+            Content = content,
+            Desc = desc,
         };
     }
 
@@ -30,6 +34,9 @@ public class Articles : AggregateRootEntity
         {
             switch (item.Key)
             {
+                case "image":
+                    SetImage(item.Value);
+                    break;
                 case "title":
                     SetTitle(item.Value);
                     break;
@@ -41,6 +48,9 @@ public class Articles : AggregateRootEntity
                     break;
                 case "views":
                     SetView(int.Parse(item.Value));
+                    break;
+                case "desc":
+                    SetDesc(item.Value);
                     break;
                 default:
                     throw new Exception("无效的参数");
@@ -67,11 +77,16 @@ public class Articles : AggregateRootEntity
     /// <returns></returns>
     public List<Comments> GetComments() => Comments.Where(c => c.ArticleId == Id).ToList();
 
+    public void SetImage(string image)
+    {
+        Image = image;
+    }
+
     public void SetTitle(string title)
     {
-        if (title.Length >= 50)
+        if (title.Length >= 20)
         {
-            throw new ArgumentOutOfRangeException("标题必须小于等于50");
+            throw new ArgumentOutOfRangeException("标题必须小于等于20");
         }
         Title = title;
     }
@@ -79,6 +94,11 @@ public class Articles : AggregateRootEntity
     public void SetContent(string content)
     {
         Content = content;
+    }
+
+    public void SetDesc(string desc)
+    {
+        Desc = desc;
     }
 
     public void SetLike(int like)

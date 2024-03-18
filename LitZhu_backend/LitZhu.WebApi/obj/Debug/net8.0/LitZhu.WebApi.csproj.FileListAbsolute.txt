@@ -167,3 +167,7 @@ D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\LitZhu,M
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\LitZhu,Markdown.pdb
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\ColorCode.dll
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\Markdig.SyntaxHighlighting.dll
+D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\LitZhu.Image.dll
+D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\LitZhu.Image.pdb
+D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\MySqlConnector.dll
+D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll

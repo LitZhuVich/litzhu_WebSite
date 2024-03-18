@@ -9,6 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Article.Domain\Article.Domain.csproj" />
     <ProjectReference Include="..\Commons\LitZhu,Markdown\LitZhu,Markdown.csproj" />
+    <ProjectReference Include="..\Commons\LitZhu.Image\LitZhu.Image.csproj" />
     <ProjectReference Include="..\Commons\LitZhu.Infrastructure\LitZhu.Infrastructure.csproj" />
   </ItemGroup>
 

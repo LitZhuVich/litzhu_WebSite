@@ -12,7 +12,6 @@ namespace LitZhu.WebApi.Controllers.User;
 public class UserController(IUserRepository _userRepository, IMapper _mapper) : ControllerBase
 {
     [HttpPost("Username")]
-    [Authorize]
     public async Task<ActionResult<UserDto>> CreateUserByUsername(UserCreateByUsernameDto createDto)
     {
         var user = _mapper.Map<Users>(createDto);
@@ -24,7 +23,6 @@ public class UserController(IUserRepository _userRepository, IMapper _mapper) : 
     }
 
     [HttpPost("Email")]
-    [Authorize]
     public async Task<ActionResult<UserDto>> CreateUserByEMail(UserCreateByEmailDto createDto)
     {
         var user = _mapper.Map<Users>(createDto);
@@ -34,6 +32,7 @@ public class UserController(IUserRepository _userRepository, IMapper _mapper) : 
     }
 
     [HttpGet("{userId}")]
+    [Authorize]
     public async Task<ActionResult<UserDto>> FindUser(Guid userId)
     {
         var user = await _userRepository.FindUserAsync(userId);
@@ -45,7 +44,21 @@ public class UserController(IUserRepository _userRepository, IMapper _mapper) : 
         return Ok(R.Success(userDto));
     }
 
+    [HttpGet("ByName/{userName}")]
+    [Authorize]
+    public async Task<ActionResult<UserDto>> FindUserByName(string userName)
+    {
+        var user = await _userRepository.FindUserByUsernameAsync(userName);
+        if (user == null)
+        {
+            return BadRequest(R.Fail("用户不存在"));
+        }
+        var userDto = _mapper.Map<UserDto>(user);
+        return Ok(R.Success(userDto));
+    }
+
     [HttpGet]
+    [Authorize]
     public async Task<ActionResult<List<UserDto>>> GetUser()
     {
         var users = await _userRepository.GetUserAsync();

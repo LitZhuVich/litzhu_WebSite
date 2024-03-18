@@ -1,6 +1,7 @@
 import { createApp } from "vue";
 import "./style.css";
 import "virtual:uno.css";
+import "element-plus/dist/index.css"; // element-plus 样式
 import App from "./App.vue";
 // 暗色模式
 import "element-plus/theme-chalk/dark/css-vars.css";
@@ -12,6 +13,7 @@ const pinia = createPinia();
 const app = createApp(App);
 // 初始化路由
 initRouter(app);
+
 // 注册所有图标 TODO:修改成自动导入https://element-plus.org/zh-CN/component/icon.html
 import * as ElementPlusIconsVue from "@element-plus/icons-vue";
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {

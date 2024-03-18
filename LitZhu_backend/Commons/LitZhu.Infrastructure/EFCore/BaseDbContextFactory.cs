@@ -10,8 +10,8 @@ namespace LitZhu.Infrastructure.EFCore
         public TContext CreateDbContext(string[] args)
         {
             DbContextOptionsBuilder<TContext> optionsBuilder = new DbContextOptionsBuilder<TContext>();
-            optionsBuilder.UseSqlServer(new ConnectionString().SqlServerConnection);
-
+            //optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=LitZhu;Integrated Security=True;Trust Server Certificate=True");
+            optionsBuilder.UseMySql(new ConnectionString().MySqlConnection, new MySqlServerVersion(new Version(8, 0, 23)));
             DbContextOptions<TContext> options = optionsBuilder.Options;
 
             var context = Activator.CreateInstance(typeof(TContext), options) as TContext;

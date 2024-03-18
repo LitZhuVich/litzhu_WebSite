@@ -17,6 +17,9 @@ public abstract class BaseDbContext(DbContextOptions options) : DbContext(option
     {
         base.OnConfiguring(optionsBuilder);
         // 在 OnConfiguring 方法中，配置数据库连接字符串
-        optionsBuilder.UseSqlServer(new ConnectionString().SqlServerConnection);
+        //optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=LitZhu;Integrated Security=True;Trust Server Certificate=True");
+        optionsBuilder.UseMySql(new ConnectionString().MySqlConnection, new MySqlServerVersion(new Version(8, 0, 23)));
+
+        //Server = localhost; Port = 3306; Database = YourDatabaseName; Uid = YourUsername; Pwd = YourPassword;
     }
 }

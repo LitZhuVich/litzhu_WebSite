@@ -8,7 +8,6 @@ namespace Article.Infrastructure.Repositories;
 
 public class ArticleRepository(ArticleDbContext _db) : IArticleRepository
 {
-
     // 将查询文章的 IQueryable 对象赋值给 _article 变量。
     // 该查询使用了 Entity Framework Core 的 Include() 和 ThenInclude() 方法来包含关联的实体。
     // 具体地，它包含了 Article 实体的 ArticleTagsList 导航属性，并进一步包含了 ArticleTagsList 实体的 Tags 导航属性。
@@ -19,7 +18,7 @@ public class ArticleRepository(ArticleDbContext _db) : IArticleRepository
     public async Task<Articles> CreateArticleAsync(Guid userId, Articles article)
     {
         string html = new MdService().MdConvertToHtml(article.Content);
-        var articleCreateEntity = Articles.Create(userId, article.Title, html);
+        var articleCreateEntity = Articles.Create(userId, article.Image, article.Title, html, article.Desc);
         var newArticle = await _db.Articles.AddAsync(articleCreateEntity);
         return newArticle.Entity;
     }
@@ -73,7 +72,7 @@ public class ArticleRepository(ArticleDbContext _db) : IArticleRepository
 
         // 排序 TODO: 增加排序
         if (!string.IsNullOrWhiteSpace(parameters.OrderBy))
-        {
+        {    
             switch (parameters.OrderBy.ToLower())
             {
                 case "likes":

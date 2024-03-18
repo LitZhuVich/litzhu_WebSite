@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FY4HFewuZkKqcEv0/yJVvi//WSghxL98UxGw95eZAgJ85U/Z0ZwZTDKo5XHTlu5YPKGen3O/2RbB0kZvy4oD0g==",
+  "dgSpecHash": "YXmHit25Qorr4Ybw8i98scdsZbkK9ONDbcFfRKJ25fdBjlBj6L9ldrEWh5Uw3DkNqdJq9Ayyy7PzkrIia6lKqQ==",
   "success": true,
   "projectFilePath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Article.Infrastructure\\Article.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -39,6 +39,8 @@
     "C:\\Users\\25968\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\25968\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\25968\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\25968\\.nuget\\packages\\mysqlconnector\\2.3.5\\mysqlconnector.2.3.5.nupkg.sha512",
+    "C:\\Users\\25968\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\8.0.1\\pomelo.entityframeworkcore.mysql.8.0.1.nupkg.sha512",
     "C:\\Users\\25968\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1\\system.configuration.configurationmanager.6.0.1.nupkg.sha512",
     "C:\\Users\\25968\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\25968\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",

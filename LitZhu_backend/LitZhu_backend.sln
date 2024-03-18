@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "User.Infrastructure", "User
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LitZhu.JWT", "Commons\LitZhu.JWT\LitZhu.JWT.csproj", "{00EEED0E-0DB6-415C-8FA3-4D26DECBFE98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LitZhu,Markdown", "Commons\LitZhu,Markdown\LitZhu,Markdown.csproj", "{591087B1-D9F2-45B9-B01D-E87E0296548F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LitZhu,Markdown", "Commons\LitZhu,Markdown\LitZhu,Markdown.csproj", "{591087B1-D9F2-45B9-B01D-E87E0296548F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LitZhu.Image", "Commons\LitZhu.Image\LitZhu.Image.csproj", "{56190CCD-15BF-4902-A5CF-C0506B9F1E52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +79,10 @@ Global
 		{591087B1-D9F2-45B9-B01D-E87E0296548F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{591087B1-D9F2-45B9-B01D-E87E0296548F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{591087B1-D9F2-45B9-B01D-E87E0296548F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56190CCD-15BF-4902-A5CF-C0506B9F1E52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56190CCD-15BF-4902-A5CF-C0506B9F1E52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56190CCD-15BF-4902-A5CF-C0506B9F1E52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56190CCD-15BF-4902-A5CF-C0506B9F1E52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -91,6 +97,7 @@ Global
 		{C7BCB19B-7A6D-459F-9DE6-26233C892CDB} = {567306B1-ADC6-4CCB-B9F1-AB86DEA53A4C}
 		{00EEED0E-0DB6-415C-8FA3-4D26DECBFE98} = {36B80125-1A03-407C-872C-C6842708EF60}
 		{591087B1-D9F2-45B9-B01D-E87E0296548F} = {36B80125-1A03-407C-872C-C6842708EF60}
+		{56190CCD-15BF-4902-A5CF-C0506B9F1E52} = {36B80125-1A03-407C-872C-C6842708EF60}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3E316340-828C-4D79-B729-71C2BF0BEB08}

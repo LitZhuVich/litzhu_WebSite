@@ -9,7 +9,7 @@ public class UserProfile : Profile
     public UserProfile()
     {
         CreateMap<Users, UserDto>()
-            .ForMember(u => u.gender, opt =>
+            .ForMember(u => u.Gender, opt =>
             {
                 opt.MapFrom(src => src.Gender.ToString());
             });

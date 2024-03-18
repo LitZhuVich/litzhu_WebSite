@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
 namespace LitZhu.JWT;
-
 
 public static class AuthenticationExtensions
 {
@@ -47,6 +47,7 @@ public static class AuthenticationExtensions
     public static IServiceCollection AddJwtServices(this IServiceCollection services)
     {
         services.AddScoped<IJwtService, JwtService>();
+        services.AddSingleton<IAuthorizationMiddlewareResultHandler, CustomAuthorizationMiddlewareResultHandler>();
 
         return services;
     }

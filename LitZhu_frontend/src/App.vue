@@ -1,9 +1,21 @@
-<script setup lang="ts">
-	import FrontView from "./views/FrontView.vue";
-</script>
-
 <template>
-	<FrontView></FrontView>
+	<Header></Header>
+	<div class="main">
+		<router-view name="main"></router-view>
+	</div>
 </template>
 
-<style scoped></style>
+<script setup lang="ts">
+	import Header from "./views/Header.vue";
+</script>
+
+<style scoped>
+	@media (max-width: 768px) {
+		.main {
+			margin: 1.5rem 2rem 0 2rem !important;
+		}
+	}
+	.main {
+		margin: 1.5rem 8rem 0 8rem;
+	}
+</style>

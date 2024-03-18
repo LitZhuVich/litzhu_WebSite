@@ -6,7 +6,7 @@ public class UserDto : IBaseEntity, IHasCreationTime, IHasModificationTime
 {
     public Guid Id { get; private set; }
     public string Username { get; private set; } = string.Empty; // 用户名
-    public string? gender { get; private set; } // 性别
+    public string? Gender { get; private set; } // 性别
     public string? Avatar { get; private set; } // 头像
     public string? Email { get; private set; } // 邮箱
     public string? Phone { get; private set; } // 手机号

@@ -148,18 +148,30 @@ public class UserDomainService(
     private string BuildToken(Users user)
     {
         // 声明 payload
-        List<Claim> claims = new List<Claim>()
-        {
+        List<Claim> claims =
+        [
             new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
             new Claim(ClaimTypes.Name, user.Username),
-        };
+        ];
+            
         List<Roles> roles = user.GetRoles();
         foreach (var role in roles)
         {
             claims.Add(new Claim(ClaimTypes.Role, role.RoleName));
         }
+
         // 生成 Key
         return _jwtService.BuildToken(claims, _jwtOptions);
     }
 
+    /// <summary>
+    /// 解析令牌
+    /// </summary>
+    /// <param name="token"></param>
+    /// <returns></returns>
+    public string? ParseToken(string token)
+    {
+        // TODO:需要对数据进行操作
+        return _jwtService.ParseToken(token, _jwtOptions);
+    }
 }
