@@ -24,7 +24,6 @@ D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\obj\Debug\net8.0\staticwe
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.LitZhu.WebApi.props
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\obj\Debug\net8.0\staticwebassets.pack.json
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\obj\Debug\net8.0\scopedcss\bundle\LitZhu.WebApi.styles.css
-D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\obj\Debug\net8.0\LitZhu.WebApi.csproj.CopyComplete
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\obj\Debug\net8.0\LitZhu.WebApi.dll
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\obj\Debug\net8.0\refint\LitZhu.WebApi.dll
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\obj\Debug\net8.0\LitZhu.WebApi.pdb
@@ -171,3 +170,7 @@ D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\LitZhu.I
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\LitZhu.Image.pdb
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\MySqlConnector.dll
 D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\nlog.config
+D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\NLog.dll
+D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\NLog.Extensions.Logging.dll
+D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\obj\Debug\net8.0\LitZhu.W.D6FC0535.Up2Date

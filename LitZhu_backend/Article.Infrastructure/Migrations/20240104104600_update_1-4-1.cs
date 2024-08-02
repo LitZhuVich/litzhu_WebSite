@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
@@ -17,17 +18,18 @@ namespace Article.Infrastructure.Migrations
             migrationBuilder.AlterColumn<string>(
                 name: "Title",
                 table: "Articles",
-                type: "nvarchar(50)",
+                type: "varchar(50)",
                 maxLength: 50,
                 nullable: false,
                 oldClrType: typeof(string),
-                oldType: "nvarchar(max)");
+                oldType: "LONGTEXT");
 
             migrationBuilder.AddPrimaryKey(
                 name: "PK_Articles",
                 table: "Articles",
                 column: "Id")
-                .Annotation("SqlServer:Clustered", false);
+                .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn);
+
 
             migrationBuilder.CreateIndex(
                 name: "IX_Articles_IsDeleted",

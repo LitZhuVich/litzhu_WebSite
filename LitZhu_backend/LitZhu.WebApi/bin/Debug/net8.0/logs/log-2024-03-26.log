@@ -1,0 +1,705 @@
+2024-03-26 09:52:17.3777|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2024-03-26 09:52:17.5554|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2024-03-26 09:52:17.6117|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\25968\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2024-03-26 09:52:17.6198|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\25968\AppData\Local\ASP.NET\DataProtection-Keys\key-04331095-e001-4e86-a2a5-ac77c623d11c.xml'. 
+2024-03-26 09:52:17.6326|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {04331095-e001-4e86-a2a5-ac77c623d11c}. 
+2024-03-26 09:52:17.6571|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {04331095-e001-4e86-a2a5-ac77c623d11c} with expiration date 2024-04-11 12:24:14Z as default key. 
+2024-03-26 09:52:17.6621|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2024-03-26 09:52:17.6621|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2024-03-26 09:52:17.6621|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2024-03-26 09:52:17.6621|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2024-03-26 09:52:17.6621|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2024-03-26 09:52:17.6621|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {04331095-e001-4e86-a2a5-ac77c623d11c} as the default key. 
+2024-03-26 09:52:17.6765|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {04331095-e001-4e86-a2a5-ac77c623d11c} was loaded during application startup. 
+2024-03-26 09:52:18.0491|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7290 
+2024-03-26 09:52:18.0532|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5167 
+2024-03-26 09:52:18.0532|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly LitZhu.WebApi 
+2024-03-26 09:52:18.0532|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2024-03-26 09:52:18.0532|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2024-03-26 09:52:18.0532|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2024-03-26 09:52:18.0532|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2024-03-26 09:52:18.0532|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi 
+2024-03-26 09:52:18.0532|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2024-03-26 09:52:18.1224|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2D6TF5IKVI" accepted. 
+2024-03-26 09:52:18.1224|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2D6TF5IKVI" started. 
+2024-03-26 09:52:18.1298|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2D6TF5IKVJ" accepted. 
+2024-03-26 09:52:18.1298|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2D6TF5IKVJ" started. 
+2024-03-26 09:52:23.2582|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2D6TF5IKVK" accepted. 
+2024-03-26 09:52:23.2582|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2D6TF5IKVK" started. 
+2024-03-26 09:52:23.4208|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN2D6TF5IKVK established using the following protocol: Tls13 
+2024-03-26 09:52:23.4832|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending SETTINGS frame for stream ID 0 with length 24 and flags NONE. 
+2024-03-26 09:52:23.4980|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2024-03-26 09:52:23.4980|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" received SETTINGS frame for stream ID 0 with length 24 and flags NONE. 
+2024-03-26 09:52:23.4980|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2024-03-26 09:52:23.4980|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2024-03-26 09:52:23.4980|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" received HEADERS frame for stream ID 1 with length 454 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2024-03-26 09:52:23.5572|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" received SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2024-03-26 09:52:23.5941|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7290/swagger - - - 
+2024-03-26 09:52:24.1079|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2024-03-26 09:52:24.1079|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-03-26 09:52:24.1356|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger' 
+2024-03-26 09:52:24.1356|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2024-03-26 09:52:24.1794|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending HEADERS frame for stream ID 1 with length 69 and flags END_STREAM, END_HEADERS. 
+2024-03-26 09:52:24.1794|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7290/swagger - 301 0 - 603.7693ms 
+2024-03-26 09:52:24.1794|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" received HEADERS frame for stream ID 3 with length 36 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2024-03-26 09:52:24.1946|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7290/swagger/index.html - - - 
+2024-03-26 09:52:24.1946|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-03-26 09:52:24.1946|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html' 
+2024-03-26 09:52:24.1946|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2024-03-26 09:52:24.2727|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2024-03-26 09:52:24.2727|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending HEADERS frame for stream ID 3 with length 28 and flags END_HEADERS. 
+2024-03-26 09:52:24.2727|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 3 with length 4096 and flags NONE. 
+2024-03-26 09:52:24.2925|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 3 with length 992 and flags NONE. 
+2024-03-26 09:52:24.2925|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 3 with length 81 and flags NONE. 
+2024-03-26 09:52:24.2925|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2024-03-26 09:52:24.2925|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 3 with length 0 and flags END_STREAM. 
+2024-03-26 09:52:24.2925|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7290/swagger/index.html - 200 - text/html;charset=utf-8 100.8053ms 
+2024-03-26 09:52:24.3434|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" received HEADERS frame for stream ID 5 with length 107 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2024-03-26 09:52:24.3434|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7290/swagger/swagger-ui.css - - - 
+2024-03-26 09:52:24.3434|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-03-26 09:52:24.3434|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/swagger-ui.css' 
+2024-03-26 09:52:24.3434|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2024-03-26 09:52:24.3542|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" received HEADERS frame for stream ID 7 with length 52 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2024-03-26 09:52:24.3542|TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2024-03-26 09:52:24.3542|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7290/swagger/swagger-ui-bundle.js - - - 
+2024-03-26 09:52:24.3542|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-03-26 09:52:24.3542|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/swagger-ui-bundle.js' 
+2024-03-26 09:52:24.3542|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2024-03-26 09:52:24.3542|TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2024-03-26 09:52:24.3542|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" received HEADERS frame for stream ID 9 with length 50 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2024-03-26 09:52:24.3542|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7290/swagger/swagger-ui-standalone-preset.js - - - 
+2024-03-26 09:52:24.3542|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-03-26 09:52:24.3542|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js' 
+2024-03-26 09:52:24.3542|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2024-03-26 09:52:24.3542|TRACE|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Range header's value is empty. 
+2024-03-26 09:52:24.3660|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending HEADERS frame for stream ID 5 with length 79 and flags END_HEADERS. 
+2024-03-26 09:52:24.3660|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 5 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.3660|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 5 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.3660|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 5 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.3660|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 5 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.3980|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending HEADERS frame for stream ID 7 with length 51 and flags END_HEADERS. 
+2024-03-26 09:52:24.3980|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.3980|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.3980|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.3980|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.3980|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending HEADERS frame for stream ID 9 with length 34 and flags END_HEADERS. 
+2024-03-26 09:52:24.3980|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.3980|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.3980|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.3980|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 5 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 5 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 5 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 5 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 5 with length 12871 and flags NONE. 
+2024-03-26 09:52:24.4121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4277|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4277|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4277|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4277|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4277|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4277|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4277|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4277|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4277|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2024-03-26 09:52:24.4277|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4277|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4277|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4277|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4277|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4277|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4277|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4277|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 9 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4277|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7290/swagger/swagger-ui.css - 200 143943 text/css 93.0249ms 
+2024-03-26 09:52:24.4277|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 5 with length 0 and flags END_STREAM. 
+2024-03-26 09:52:24.4277|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4277|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4277|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4277|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4425|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 9 with length 11806 and flags NONE. 
+2024-03-26 09:52:24.4425|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2024-03-26 09:52:24.4425|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 9 with length 0 and flags END_STREAM. 
+2024-03-26 09:52:24.4425|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7290/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 83.7154ms 
+2024-03-26 09:52:24.4425|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4425|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4425|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4425|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4425|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4425|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4425|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4425|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4425|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4425|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4425|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4425|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4425|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4581|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4581|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4581|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4581|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4581|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4581|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4581|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4581|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4728|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4728|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4728|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4728|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4728|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4728|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4728|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4728|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4728|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4728|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4728|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4888|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4888|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4888|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4888|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4888|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4888|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4888|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4888|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4888|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4888|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 09:52:24.4888|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 14801 and flags NONE. 
+2024-03-26 09:52:24.4888|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2024-03-26 09:52:24.4888|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7290/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 144.3609ms 
+2024-03-26 09:52:24.4888|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 7 with length 0 and flags END_STREAM. 
+2024-03-26 09:52:24.5677|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" received HEADERS frame for stream ID 11 with length 51 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2024-03-26 09:52:24.5677|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7290/_framework/aspnetcore-browser-refresh.js - - - 
+2024-03-26 09:52:24.5677|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending HEADERS frame for stream ID 11 with length 60 and flags END_HEADERS. 
+2024-03-26 09:52:24.5677|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 11 with length 13761 and flags NONE. 
+2024-03-26 09:52:24.5869|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 11 with length 0 and flags END_STREAM. 
+2024-03-26 09:52:24.5869|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7290/_framework/aspnetcore-browser-refresh.js - 200 13761 application/javascript;+charset=utf-8 18.4520ms 
+2024-03-26 09:52:24.5994|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" received HEADERS frame for stream ID 13 with length 33 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2024-03-26 09:52:24.5994|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7290/_vs/browserLink - - - 
+2024-03-26 09:52:24.6847|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending HEADERS frame for stream ID 13 with length 149 and flags END_HEADERS. 
+2024-03-26 09:52:24.6847|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 13 with length 9986 and flags NONE. 
+2024-03-26 09:52:24.6847|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 13 with length 10240 and flags NONE. 
+2024-03-26 09:52:24.6847|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 13 with length 10240 and flags NONE. 
+2024-03-26 09:52:24.6847|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 13 with length 10240 and flags NONE. 
+2024-03-26 09:52:24.6930|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 13 with length 10240 and flags NONE. 
+2024-03-26 09:52:24.6930|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 13 with length 10240 and flags NONE. 
+2024-03-26 09:52:24.6930|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 13 with length 10240 and flags NONE. 
+2024-03-26 09:52:24.6930|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 13 with length 10240 and flags NONE. 
+2024-03-26 09:52:24.6930|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 13 with length 10240 and flags NONE. 
+2024-03-26 09:52:24.6930|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 13 with length 10240 and flags NONE. 
+2024-03-26 09:52:24.6930|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 13 with length 10240 and flags NONE. 
+2024-03-26 09:52:24.6930|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 13 with length 10240 and flags NONE. 
+2024-03-26 09:52:24.6930|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 13 with length 10240 and flags NONE. 
+2024-03-26 09:52:24.6930|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 13 with length 10240 and flags NONE. 
+2024-03-26 09:52:24.6930|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 13 with length 10240 and flags NONE. 
+2024-03-26 09:52:24.6930|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 13 with length 160 and flags NONE. 
+2024-03-26 09:52:24.6930|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 13 with length 0 and flags END_STREAM. 
+2024-03-26 09:52:24.6930|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7290/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 106.5102ms 
+2024-03-26 09:52:25.2517|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" received HEADERS frame for stream ID 15 with length 66 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2024-03-26 09:52:25.2517|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7290/swagger/v1/swagger.json - - - 
+2024-03-26 09:52:25.2517|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-03-26 09:52:25.2517|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json' 
+2024-03-26 09:52:25.2517|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2024-03-26 09:52:25.7426|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending HEADERS frame for stream ID 15 with length 35 and flags END_HEADERS. 
+2024-03-26 09:52:25.7426|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 15 with length 16384 and flags NONE. 
+2024-03-26 09:52:25.7426|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 15 with length 16384 and flags NONE. 
+2024-03-26 09:52:25.7426|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 15 with length 16384 and flags NONE. 
+2024-03-26 09:52:25.7426|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 15 with length 9384 and flags NONE. 
+2024-03-26 09:52:25.7426|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" sending DATA frame for stream ID 15 with length 0 and flags END_STREAM. 
+2024-03-26 09:52:25.7426|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7290/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 493.7713ms 
+2024-03-26 09:52:26.2379|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2D6TF5IKVK" received FIN. 
+2024-03-26 09:52:26.2443|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|The connection queue processing loop for 0HN2D6TF5IKVK completed. 
+2024-03-26 09:52:26.2443|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2D6TF5IKVK" is closed. The last processed stream ID was 15. 
+2024-03-26 09:52:26.2443|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2D6TF5IKVK" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-03-26 09:52:26.2570|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2D6TF5IKVK" stopped. 
+2024-03-26 09:52:28.1401|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Authentication of the HTTPS connection timed out. 
+2024-03-26 09:52:28.1401|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Authentication of the HTTPS connection timed out. 
+2024-03-26 09:52:28.1401|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2D6TF5IKVJ" stopped. 
+2024-03-26 09:52:28.1401|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2D6TF5IKVI" stopped. 
+2024-03-26 09:52:28.1401|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2D6TF5IKVI" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-03-26 09:52:28.1401|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2D6TF5IKVJ" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-03-26 09:53:04.6124|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2D6TF5IKVL" accepted. 
+2024-03-26 09:53:04.6124|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2D6TF5IKVL" received FIN. 
+2024-03-26 09:53:04.6124|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2D6TF5IKVL" started. 
+2024-03-26 09:53:04.6201|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2D6TF5IKVM" accepted. 
+2024-03-26 09:53:04.6201|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2D6TF5IKVM" started. 
+2024-03-26 09:53:04.6201|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-03-26 09:53:04.6306|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN2D6TF5IKVM established using the following protocol: Tls13 
+2024-03-26 09:53:04.6644|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2D6TF5IKVL" stopped. 
+2024-03-26 09:53:04.6644|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2D6TF5IKVL" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-03-26 09:53:04.6644|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7290//api/Article - - - 
+2024-03-26 09:53:04.6644|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-03-26 09:53:04.6644|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '//api/Article' 
+2024-03-26 09:53:04.6644|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2024-03-26 09:53:04.6644|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2024-03-26 09:53:04.7589|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2024-03-26 09:53:04.7589|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2D6TF5IKVM" completed keep alive response. 
+2024-03-26 09:53:04.7589|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7290//api/Article - 404 0 - 94.1800ms 
+2024-03-26 09:53:04.7589|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7290//api/Article, Response status code: 404 
+2024-03-26 09:53:24.6555|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7290/api/Article - - - 
+2024-03-26 09:53:24.6555|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-03-26 09:53:24.6630|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/Article' 
+2024-03-26 09:53:24.6630|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'LitZhu.WebApi.Controllers.Article.ArticleController.GetArticle (LitZhu.WebApi)' with route pattern 'api/Article' is valid for the request path '/api/Article' 
+2024-03-26 09:53:24.6630|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'LitZhu.WebApi.Controllers.Article.ArticleController.GetArticle (LitZhu.WebApi)' 
+2024-03-26 09:53:24.6630|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata. 
+2024-03-26 09:53:24.6630|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2024-03-26 09:53:24.6630|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2024-03-26 09:53:24.7059|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'LitZhu.WebApi.Controllers.Article.ArticleController.GetArticle (LitZhu.WebApi)' 
+2024-03-26 09:53:24.7493|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetArticle", controller = "Article"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Article.Domain.DTO.ArticleDto]]] GetArticle(Article.Domain.DTO.ArticleParametersDto) on controller LitZhu.WebApi.Controllers.Article.ArticleController (LitZhu.WebApi). 
+2024-03-26 09:53:24.7493|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2024-03-26 09:53:24.7493|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2024-03-26 09:53:24.7493|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2024-03-26 09:53:24.7493|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2024-03-26 09:53:24.7493|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2024-03-26 09:53:24.7493|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller LitZhu.WebApi.Controllers.Article.ArticleController (LitZhu.WebApi) 
+2024-03-26 09:53:25.0181|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An additional 'IServiceProvider' was created for internal use by Entity Framework. An existing service provider was not used due to the following configuration changes: configuration changed for 'Core:ConfigureWarnings', configuration added for 'Pomelo.EntityFrameworkCore.MySql:ServerVersion', configuration added for 'Pomelo.EntityFrameworkCore.MySql:DisableBackslashEscaping', configuration added for 'Pomelo.EntityFrameworkCore.MySql:SetSqlModeOnOpen', configuration added for 'Pomelo.EntityFrameworkCore.MySql:DisableLineBreakToCharSubstition', configuration added for 'Pomelo.EntityFrameworkCore.MySql:DefaultDataTypeMappings', configuration added for 'Pomelo.EntityFrameworkCore.MySql:SchemaBehavior', configuration added for 'Pomelo.EntityFrameworkCore.MySql:SchemaNameTranslator', configuration added for 'Pomelo.EntityFrameworkCore.MySql:EnableIndexOptimizedBooleanColumns', configuration added for 'Pomelo.EntityFrameworkCore.MySql:LimitKeyedOrIndexedStringColumnLength', configuration added for 'Pomelo.EntityFrameworkCore.MySql:EnableStringComparisonTranslations', configuration added for 'Pomelo.EntityFrameworkCore.MySql:EnablePrimitiveCollectionsSupport'. 
+2024-03-26 09:53:25.4068|DEBUG|Microsoft.EntityFrameworkCore.Model|The index {'ArticleId'} was not created on entity type 'ArticleTags' as the properties are already covered by the index {'ArticleId', 'TagId'}. 
+2024-03-26 09:53:25.4863|WARN|Microsoft.EntityFrameworkCore.Model.Validation|Entity 'Articles' has a global query filter defined and is the required end of a relationship with the entity 'ArticleTags'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+2024-03-26 09:53:25.4953|WARN|Microsoft.EntityFrameworkCore.Model.Validation|Entity 'Articles' has a global query filter defined and is the required end of a relationship with the entity 'Comments'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+2024-03-26 09:53:25.6660|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 8.0.1 initialized 'ArticleDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:8.0.1' with options: ServerVersion=8.0.23-mysql  
+2024-03-26 09:53:25.7901|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller LitZhu.WebApi.Controllers.Article.ArticleController (LitZhu.WebApi) 
+2024-03-26 09:53:25.7901|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'parameters' of type 'Article.Domain.DTO.ArticleParametersDto' ... 
+2024-03-26 09:53:25.7901|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder|Attempting to bind parameter 'parameters' of type 'Article.Domain.DTO.ArticleParametersDto' using the name '' in request data ... 
+2024-03-26 09:53:25.7901|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'Q' of type 'System.String' using the name 'Q' in request data ... 
+2024-03-26 09:53:25.7901|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'Q' for binding parameter 'Q' of type 'System.String'. 
+2024-03-26 09:53:25.7901|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'Q' of type 'System.String'. 
+2024-03-26 09:53:25.7901|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'PageIndex' of type 'System.Int32' using the name 'PageIndex' in request data ... 
+2024-03-26 09:53:25.7901|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'PageIndex' for binding parameter 'PageIndex' of type 'System.Int32'. 
+2024-03-26 09:53:25.7901|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'PageIndex' of type 'System.Int32'. 
+2024-03-26 09:53:25.7901|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'PageSize' of type 'System.Int32' using the name 'PageSize' in request data ... 
+2024-03-26 09:53:25.8016|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'PageSize' for binding parameter 'PageSize' of type 'System.Int32'. 
+2024-03-26 09:53:25.8016|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'PageSize' of type 'System.Int32'. 
+2024-03-26 09:53:25.8016|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'OrderBy' of type 'System.String' using the name 'OrderBy' in request data ... 
+2024-03-26 09:53:25.8016|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Could not find a value in the request with name 'OrderBy' for binding parameter 'OrderBy' of type 'System.String'. 
+2024-03-26 09:53:25.8016|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'OrderBy' of type 'System.String'. 
+2024-03-26 09:53:25.8016|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder|Done attempting to bind parameter 'parameters' of type 'Article.Domain.DTO.ArticleParametersDto'. 
+2024-03-26 09:53:25.8016|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'parameters' of type 'Article.Domain.DTO.ArticleParametersDto'. 
+2024-03-26 09:53:25.8016|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'parameters' of type 'Article.Domain.DTO.ArticleParametersDto' ... 
+2024-03-26 09:53:25.8016|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'parameters' of type 'Article.Domain.DTO.ArticleParametersDto'. 
+2024-03-26 09:53:25.8016|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-26 09:53:25.8016|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-26 09:53:25.8016|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2024-03-26 09:53:25.8016|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2024-03-26 09:53:25.8186|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method LitZhu.WebApi.Controllers.Article.ArticleController.GetArticle (LitZhu.WebApi) - Validation state: Valid 
+2024-03-26 09:53:25.8186|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method LitZhu.WebApi.Controllers.Article.ArticleController.GetArticle (LitZhu.WebApi) with arguments (ArticleParametersDto { Q = , PageIndex = 1, PageSize = 10, OrderBy = Likes }) 
+2024-03-26 09:53:25.8656|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Articles>()
+    .Include(x => x.Comments)
+    .Include(x => x.ArticleTagsList)
+    .ThenInclude(at => at.Tags)
+    .OrderByDescending(x => x.Likes)
+    .Skip(__p_0)
+    .Take(__p_1)' 
+2024-03-26 09:53:25.9290|DEBUG|Microsoft.EntityFrameworkCore.Query|Including navigation: 'Articles.Comments'. 
+2024-03-26 09:53:25.9290|DEBUG|Microsoft.EntityFrameworkCore.Query|Including navigation: 'Articles.ArticleTagsList'. 
+2024-03-26 09:53:25.9594|DEBUG|Microsoft.EntityFrameworkCore.Query|Including navigation: 'ArticleTags.Tags'. 
+2024-03-26 09:53:26.1361|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+2024-03-26 09:53:26.1488|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<Articles>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Client Projections:
+            0 -> Dictionary<IProperty, int> { [Property: Articles.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Articles.Content (string) Required, 1], [Property: Articles.CreationTime (DateTime) Required, 2], [Property: Articles.DeletionTime (DateTime?), 3], [Property: Articles.Desc (string) Required, 4], [Property: Articles.Image (string) Required, 5], [Property: Articles.IsDeleted (bool) Required Index, 6], [Property: Articles.LastModificationTime (DateTime?), 7], [Property: Articles.Likes (int) Required, 8], [Property: Articles.Title (string) Required Index MaxLength(20), 9], [Property: Articles.UserId (Guid) Required, 10], [Property: Articles.Views (int) Required, 11] }
+            1 -> 0
+            2 -> Dictionary<IProperty, int> { [Property: Comments.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 12], [Property: Comments.ArticleId (Guid) Required FK Index, 13], [Property: Comments.Content (string) Required MaxLength(1000), 14], [Property: Comments.CreationTime (DateTime) Required, 15], [Property: Comments.LastModificationTime (DateTime?), 16], [Property: Comments.Likes (int) Required, 17], [Property: Comments.PId (Guid) Required, 18], [Property: Comments.Path (string) Required, 19], [Property: Comments.UserId (Guid) Required, 20] }
+            3 -> 12
+            4 -> Dictionary<IProperty, int> { [Property: ArticleTags.ArticleId (Guid) Required PK FK AfterSave:Throw, 21], [Property: ArticleTags.TagId (Guid) Required PK FK Index AfterSave:Throw, 22] }
+            5 -> Dictionary<IProperty, int> { [Property: Tags.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 23], [Property: Tags.CreationTime (DateTime) Required, 24], [Property: Tags.DeletionTime (DateTime?), 25], [Property: Tags.IsDeleted (bool) Required Index, 26], [Property: Tags.LastModificationTime (DateTime?), 27], [Property: Tags.TagName (string) Required MaxLength(10), 28] }
+            6 -> 21
+            7 -> 22
+            8 -> 23
+        SELECT t.Id, t.Content, t.CreationTime, t.DeletionTime, t.Desc, t.Image, t.IsDeleted, t.LastModificationTime, t.Likes, t.Title, t.UserId, t.Views, c.Id, c.ArticleId, c.Content, c.CreationTime, c.LastModificationTime, c.Likes, c.PId, c.Path, c.UserId, t1.ArticleId, t1.TagId, t1.Id, t1.CreationTime, t1.DeletionTime, t1.IsDeleted, t1.LastModificationTime, t1.TagName
+        FROM 
+        (
+            SELECT a.Id, a.Content, a.CreationTime, a.DeletionTime, a.Desc, a.Image, a.IsDeleted, a.LastModificationTime, a.Likes, a.Title, a.UserId, a.Views
+            FROM Articles AS a
+            WHERE a.IsDeleted == FALSE
+            ORDER BY a.Likes DESC
+            OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+        ) AS t
+        LEFT JOIN Comments AS c ON t.Id == c.ArticleId
+        LEFT JOIN 
+        (
+            SELECT a0.ArticleId, a0.TagId, t0.Id, t0.CreationTime, t0.DeletionTime, t0.IsDeleted, t0.LastModificationTime, t0.TagName
+            FROM Articles_Tags AS a0
+            INNER JOIN 
+            (
+                SELECT t2.Id, t2.CreationTime, t2.DeletionTime, t2.IsDeleted, t2.LastModificationTime, t2.TagName
+                FROM Tags AS t2
+                WHERE t2.IsDeleted == FALSE
+            ) AS t0 ON a0.TagId == t0.Id
+        ) AS t1 ON t.Id == t1.ArticleId
+        ORDER BY t.Likes DESC, t.Id ASC, c.Id ASC, t1.ArticleId ASC, t1.TagId ASC), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Articles>, 
+    Article.Infrastructure.ArticleDbContext, 
+    False, 
+    False, 
+    True
+)' 
+2024-03-26 09:53:26.1817|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2024-03-26 09:53:26.1817|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (6ms). 
+2024-03-26 09:53:26.1991|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'LitZhu' on server 'localhost'. 
+2024-03-26 09:53:26.3169|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'LitZhu' on server 'localhost'. 
+2024-03-26 09:53:26.3189|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2024-03-26 09:53:26.3189|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (1ms). 
+2024-03-26 09:53:26.3332|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (14ms). 
+2024-03-26 09:53:26.3332|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Content`, `t`.`CreationTime`, `t`.`DeletionTime`, `t`.`Desc`, `t`.`Image`, `t`.`IsDeleted`, `t`.`LastModificationTime`, `t`.`Likes`, `t`.`Title`, `t`.`UserId`, `t`.`Views`, `c`.`Id`, `c`.`ArticleId`, `c`.`Content`, `c`.`CreationTime`, `c`.`LastModificationTime`, `c`.`Likes`, `c`.`PId`, `c`.`Path`, `c`.`UserId`, `t1`.`ArticleId`, `t1`.`TagId`, `t1`.`Id`, `t1`.`CreationTime`, `t1`.`DeletionTime`, `t1`.`IsDeleted`, `t1`.`LastModificationTime`, `t1`.`TagName`
+FROM (
+    SELECT `a`.`Id`, `a`.`Content`, `a`.`CreationTime`, `a`.`DeletionTime`, `a`.`Desc`, `a`.`Image`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`Likes`, `a`.`Title`, `a`.`UserId`, `a`.`Views`
+    FROM `Articles` AS `a`
+    WHERE NOT (`a`.`IsDeleted`)
+    ORDER BY `a`.`Likes` DESC
+    LIMIT @__p_1 OFFSET @__p_0
+) AS `t`
+LEFT JOIN `Comments` AS `c` ON `t`.`Id` = `c`.`ArticleId`
+LEFT JOIN (
+    SELECT `a0`.`ArticleId`, `a0`.`TagId`, `t0`.`Id`, `t0`.`CreationTime`, `t0`.`DeletionTime`, `t0`.`IsDeleted`, `t0`.`LastModificationTime`, `t0`.`TagName`
+    FROM `Articles_Tags` AS `a0`
+    INNER JOIN (
+        SELECT `t2`.`Id`, `t2`.`CreationTime`, `t2`.`DeletionTime`, `t2`.`IsDeleted`, `t2`.`LastModificationTime`, `t2`.`TagName`
+        FROM `Tags` AS `t2`
+        WHERE NOT (`t2`.`IsDeleted`)
+    ) AS `t0` ON `a0`.`TagId` = `t0`.`Id`
+) AS `t1` ON `t`.`Id` = `t1`.`ArticleId`
+ORDER BY `t`.`Likes` DESC, `t`.`Id`, `c`.`Id`, `t1`.`ArticleId`, `t1`.`TagId` 
+2024-03-26 09:53:26.4379|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (96ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Content`, `t`.`CreationTime`, `t`.`DeletionTime`, `t`.`Desc`, `t`.`Image`, `t`.`IsDeleted`, `t`.`LastModificationTime`, `t`.`Likes`, `t`.`Title`, `t`.`UserId`, `t`.`Views`, `c`.`Id`, `c`.`ArticleId`, `c`.`Content`, `c`.`CreationTime`, `c`.`LastModificationTime`, `c`.`Likes`, `c`.`PId`, `c`.`Path`, `c`.`UserId`, `t1`.`ArticleId`, `t1`.`TagId`, `t1`.`Id`, `t1`.`CreationTime`, `t1`.`DeletionTime`, `t1`.`IsDeleted`, `t1`.`LastModificationTime`, `t1`.`TagName`
+FROM (
+    SELECT `a`.`Id`, `a`.`Content`, `a`.`CreationTime`, `a`.`DeletionTime`, `a`.`Desc`, `a`.`Image`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`Likes`, `a`.`Title`, `a`.`UserId`, `a`.`Views`
+    FROM `Articles` AS `a`
+    WHERE NOT (`a`.`IsDeleted`)
+    ORDER BY `a`.`Likes` DESC
+    LIMIT @__p_1 OFFSET @__p_0
+) AS `t`
+LEFT JOIN `Comments` AS `c` ON `t`.`Id` = `c`.`ArticleId`
+LEFT JOIN (
+    SELECT `a0`.`ArticleId`, `a0`.`TagId`, `t0`.`Id`, `t0`.`CreationTime`, `t0`.`DeletionTime`, `t0`.`IsDeleted`, `t0`.`LastModificationTime`, `t0`.`TagName`
+    FROM `Articles_Tags` AS `a0`
+    INNER JOIN (
+        SELECT `t2`.`Id`, `t2`.`CreationTime`, `t2`.`DeletionTime`, `t2`.`IsDeleted`, `t2`.`LastModificationTime`, `t2`.`TagName`
+        FROM `Tags` AS `t2`
+        WHERE NOT (`t2`.`IsDeleted`)
+    ) AS `t0` ON `a0`.`TagId` = `t0`.`Id`
+) AS `t1` ON `t`.`Id` = `t1`.`ArticleId`
+ORDER BY `t`.`Likes` DESC, `t`.`Id`, `c`.`Id`, `t1`.`ArticleId`, `t1`.`TagId` 
+2024-03-26 09:53:26.4780|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ArticleDbContext' started tracking 'Articles' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-26 09:53:26.5090|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ArticleDbContext' started tracking 'Articles' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-26 09:53:26.5090|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ArticleDbContext' started tracking 'Articles' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-26 09:53:26.5090|DEBUG|Microsoft.EntityFrameworkCore.ChangeTracking|Context 'ArticleDbContext' started tracking 'Articles' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-03-26 09:53:26.5090|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'LitZhu' on server 'localhost'. 
+2024-03-26 09:53:26.5202|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'LitZhu' on server 'localhost' is being disposed after spending 79ms reading results. 
+2024-03-26 09:53:26.5202|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'LitZhu' on server 'localhost'. 
+2024-03-26 09:53:26.5202|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'LitZhu' on server 'localhost' (2ms). 
+2024-03-26 09:53:26.5405|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method LitZhu.WebApi.Controllers.Article.ArticleController.GetArticle (LitZhu.WebApi), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 718.073ms. 
+2024-03-26 09:53:26.5405|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2024-03-26 09:53:26.5405|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2024-03-26 09:53:26.5405|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-26 09:53:26.5405|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-26 09:53:26.5405|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2024-03-26 09:53:26.5405|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2024-03-26 09:53:26.5405|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2024-03-26 09:53:26.5405|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter 
+2024-03-26 09:53:26.5405|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2024-03-26 09:53:26.5405|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2024-03-26 09:53:26.5405|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2024-03-26 09:53:26.5405|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response. 
+2024-03-26 09:53:26.5405|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'LitZhu.WebApi.R'. 
+2024-03-26 09:53:26.6310|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.OkObjectResult. 
+2024-03-26 09:53:26.6310|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2024-03-26 09:53:26.6310|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2024-03-26 09:53:26.6310|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action LitZhu.WebApi.Controllers.Article.ArticleController.GetArticle (LitZhu.WebApi) in 1879.374ms 
+2024-03-26 09:53:26.6310|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'LitZhu.WebApi.Controllers.Article.ArticleController.GetArticle (LitZhu.WebApi)' 
+2024-03-26 09:53:26.6310|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2D6TF5IKVM" completed keep alive response. 
+2024-03-26 09:53:26.6310|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ArticleDbContext' disposed. 
+2024-03-26 09:53:26.6310|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'LitZhu' on server 'localhost'. 
+2024-03-26 09:53:26.6310|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'LitZhu' on server 'localhost' (2ms). 
+2024-03-26 09:53:26.6310|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7290/api/Article - 200 2809 application/json;+charset=utf-8 1986.8723ms 
+2024-03-26 10:16:55.8709|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2D6TF5IKVM" received FIN. 
+2024-03-26 10:16:55.8709|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2D6TF5IKVM" disconnecting. 
+2024-03-26 10:16:55.8709|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2D6TF5IKVM" stopped. 
+2024-03-26 10:16:55.8838|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2D6TF5IKVM" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-03-26 14:27:42.5497|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2024-03-26 14:27:42.6773|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2024-03-26 14:27:42.7287|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\25968\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2024-03-26 14:27:42.7287|DEBUG|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Reading data from file 'C:\Users\25968\AppData\Local\ASP.NET\DataProtection-Keys\key-04331095-e001-4e86-a2a5-ac77c623d11c.xml'. 
+2024-03-26 14:27:42.7543|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Found key {04331095-e001-4e86-a2a5-ac77c623d11c}. 
+2024-03-26 14:27:42.7676|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.DefaultKeyResolver|Considering key {04331095-e001-4e86-a2a5-ac77c623d11c} with expiration date 2024-04-11 12:24:14Z as default key. 
+2024-03-26 14:27:42.7676|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2024-03-26 14:27:42.7676|DEBUG|Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor|Decrypting secret element using Windows DPAPI. 
+2024-03-26 14:27:42.7720|DEBUG|Microsoft.AspNetCore.DataProtection.TypeForwardingActivator|Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60 
+2024-03-26 14:27:42.7720|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'AES' from provider '(null)' with chaining mode CBC. 
+2024-03-26 14:27:42.7720|DEBUG|Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.CngCbcAuthenticatedEncryptorFactory|Opening CNG algorithm 'SHA256' from provider '(null)' with HMAC. 
+2024-03-26 14:27:42.7720|DEBUG|Microsoft.AspNetCore.DataProtection.KeyManagement.KeyRingProvider|Using key {04331095-e001-4e86-a2a5-ac77c623d11c} as the default key. 
+2024-03-26 14:27:42.7720|DEBUG|Microsoft.AspNetCore.DataProtection.Internal.DataProtectionHostedService|Key ring with default key {04331095-e001-4e86-a2a5-ac77c623d11c} was loaded during application startup. 
+2024-03-26 14:27:43.0866|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7290 
+2024-03-26 14:27:43.0866|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5167 
+2024-03-26 14:27:43.0866|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly LitZhu.WebApi 
+2024-03-26 14:27:43.0866|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2024-03-26 14:27:43.0866|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2024-03-26 14:27:43.0866|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2024-03-26 14:27:43.0866|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2024-03-26 14:27:43.0866|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi 
+2024-03-26 14:27:43.0866|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2024-03-26 14:27:43.3063|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2DBNC20IV2" accepted. 
+2024-03-26 14:27:43.3063|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2DBNC20IV2" started. 
+2024-03-26 14:27:43.3063|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2DBNC20IV3" accepted. 
+2024-03-26 14:27:43.3063|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2DBNC20IV3" started. 
+2024-03-26 14:27:47.1499|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2DBNC20IV4" accepted. 
+2024-03-26 14:27:47.1499|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2DBNC20IV4" started. 
+2024-03-26 14:27:47.3622|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN2DBNC20IV4 established using the following protocol: Tls13 
+2024-03-26 14:27:47.4568|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending SETTINGS frame for stream ID 0 with length 24 and flags NONE. 
+2024-03-26 14:27:47.4638|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2024-03-26 14:27:47.4638|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" received SETTINGS frame for stream ID 0 with length 24 and flags NONE. 
+2024-03-26 14:27:47.4638|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2024-03-26 14:27:47.4638|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0. 
+2024-03-26 14:27:47.4638|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" received HEADERS frame for stream ID 1 with length 462 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2024-03-26 14:27:47.5079|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" received SETTINGS frame for stream ID 0 with length 0 and flags ACK. 
+2024-03-26 14:27:47.5304|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7290/swagger/index.html - - - 
+2024-03-26 14:27:48.0033|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2024-03-26 14:27:48.0033|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-03-26 14:27:48.0370|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html' 
+2024-03-26 14:27:48.0370|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2024-03-26 14:27:48.1692|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2024-03-26 14:27:48.1692|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending HEADERS frame for stream ID 1 with length 66 and flags END_HEADERS. 
+2024-03-26 14:27:48.1847|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 1 with length 4096 and flags NONE. 
+2024-03-26 14:27:48.1847|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 1 with length 992 and flags NONE. 
+2024-03-26 14:27:48.1847|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 1 with length 81 and flags NONE. 
+2024-03-26 14:27:48.1997|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2024-03-26 14:27:48.1997|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 1 with length 0 and flags END_STREAM. 
+2024-03-26 14:27:48.1997|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7290/swagger/index.html - 200 - text/html;charset=utf-8 685.6495ms 
+2024-03-26 14:27:48.5522|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" received HEADERS frame for stream ID 3 with length 109 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2024-03-26 14:27:48.5549|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" received HEADERS frame for stream ID 5 with length 57 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2024-03-26 14:27:48.5549|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7290/_framework/aspnetcore-browser-refresh.js - - - 
+2024-03-26 14:27:48.5549|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7290/_vs/browserLink - - - 
+2024-03-26 14:27:48.5549|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending HEADERS frame for stream ID 3 with length 60 and flags END_HEADERS. 
+2024-03-26 14:27:48.5549|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 3 with length 13761 and flags NONE. 
+2024-03-26 14:27:48.5708|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 3 with length 0 and flags END_STREAM. 
+2024-03-26 14:27:48.5708|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7290/_framework/aspnetcore-browser-refresh.js - 200 13761 application/javascript;+charset=utf-8 15.8123ms 
+2024-03-26 14:27:48.6826|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending HEADERS frame for stream ID 5 with length 119 and flags END_HEADERS. 
+2024-03-26 14:27:48.6826|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 5 with length 9986 and flags NONE. 
+2024-03-26 14:27:48.6826|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-26 14:27:48.6952|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-26 14:27:48.6952|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-26 14:27:48.6952|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-26 14:27:48.6952|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-26 14:27:48.6952|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-26 14:27:48.6952|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-26 14:27:48.6952|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-26 14:27:48.7121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-26 14:27:48.7121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-26 14:27:48.7121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-26 14:27:48.7121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-26 14:27:48.7121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-26 14:27:48.7121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 5 with length 10240 and flags NONE. 
+2024-03-26 14:27:48.7121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 5 with length 160 and flags NONE. 
+2024-03-26 14:27:48.7121|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 5 with length 0 and flags END_STREAM. 
+2024-03-26 14:27:48.7121|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7290/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 167.6782ms 
+2024-03-26 14:27:49.5137|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" received HEADERS frame for stream ID 7 with length 66 and flags END_STREAM, END_HEADERS, PRIORITY. 
+2024-03-26 14:27:49.5137|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7290/swagger/v1/swagger.json - - - 
+2024-03-26 14:27:49.5137|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-03-26 14:27:49.5137|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json' 
+2024-03-26 14:27:49.5137|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints 
+2024-03-26 14:27:49.9134|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending HEADERS frame for stream ID 7 with length 65 and flags END_HEADERS. 
+2024-03-26 14:27:49.9134|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 14:27:49.9134|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 14:27:49.9134|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 7 with length 16384 and flags NONE. 
+2024-03-26 14:27:49.9134|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 7 with length 9384 and flags NONE. 
+2024-03-26 14:27:49.9134|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" sending DATA frame for stream ID 7 with length 0 and flags END_STREAM. 
+2024-03-26 14:27:49.9134|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7290/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 404.8062ms 
+2024-03-26 14:27:50.6664|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2DBNC20IV4" received FIN. 
+2024-03-26 14:27:50.6664|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|The connection queue processing loop for 0HN2DBNC20IV4 completed. 
+2024-03-26 14:27:50.6664|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2DBNC20IV4" is closed. The last processed stream ID was 7. 
+2024-03-26 14:27:50.6664|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2DBNC20IV4" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-03-26 14:27:50.6817|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2DBNC20IV4" stopped. 
+2024-03-26 14:27:53.3267|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Authentication of the HTTPS connection timed out. 
+2024-03-26 14:27:53.3267|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Authentication of the HTTPS connection timed out. 
+2024-03-26 14:27:53.3267|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2DBNC20IV3" stopped. 
+2024-03-26 14:27:53.3267|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2DBNC20IV2" stopped. 
+2024-03-26 14:27:53.3267|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2DBNC20IV2" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-03-26 14:27:53.3267|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2DBNC20IV3" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-03-26 14:29:07.1767|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2DBNC20IV5" accepted. 
+2024-03-26 14:29:07.1767|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2DBNC20IV5" started. 
+2024-03-26 14:29:07.2341|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN2DBNC20IV5 established using the following protocol: Tls13 
+2024-03-26 14:29:07.2341|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7290/api/ArticleTags/45026b26-8941-4bca-807a-06481f145aa5/Tags - application/json - 
+2024-03-26 14:29:07.2341|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed. 
+2024-03-26 14:29:07.2569|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/ArticleTags/45026b26-8941-4bca-807a-06481f145aa5/Tags' 
+2024-03-26 14:29:07.2569|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'LitZhu.WebApi.Controllers.Article.ArticleTagsController.GetArticleTags (LitZhu.WebApi)' with route pattern 'api/ArticleTags/{articleId}/Tags' is valid for the request path '/api/ArticleTags/45026b26-8941-4bca-807a-06481f145aa5/Tags' 
+2024-03-26 14:29:07.2569|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'LitZhu.WebApi.Controllers.Article.ArticleTagsController.GetArticleTags (LitZhu.WebApi)' 
+2024-03-26 14:29:07.2569|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata. 
+2024-03-26 14:29:07.2569|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint. 
+2024-03-26 14:29:07.3721|DEBUG|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was not authenticated. 
+2024-03-26 14:29:07.3721|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'LitZhu.WebApi.Controllers.Article.ArticleTagsController.GetArticleTags (LitZhu.WebApi)' 
+2024-03-26 14:29:07.4105|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetArticleTags", controller = "ArticleTags"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[Article.Domain.DTO.TagDto]]] GetArticleTags(System.Guid) on controller LitZhu.WebApi.Controllers.Article.ArticleTagsController (LitZhu.WebApi). 
+2024-03-26 14:29:07.4105|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2024-03-26 14:29:07.4105|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2024-03-26 14:29:07.4105|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2024-03-26 14:29:07.4105|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2024-03-26 14:29:07.4105|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2024-03-26 14:29:07.4151|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller LitZhu.WebApi.Controllers.Article.ArticleTagsController (LitZhu.WebApi) 
+2024-03-26 14:29:07.8145|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An additional 'IServiceProvider' was created for internal use by Entity Framework. An existing service provider was not used due to the following configuration changes: configuration changed for 'Core:ConfigureWarnings', configuration added for 'Pomelo.EntityFrameworkCore.MySql:ServerVersion', configuration added for 'Pomelo.EntityFrameworkCore.MySql:DisableBackslashEscaping', configuration added for 'Pomelo.EntityFrameworkCore.MySql:SetSqlModeOnOpen', configuration added for 'Pomelo.EntityFrameworkCore.MySql:DisableLineBreakToCharSubstition', configuration added for 'Pomelo.EntityFrameworkCore.MySql:DefaultDataTypeMappings', configuration added for 'Pomelo.EntityFrameworkCore.MySql:SchemaBehavior', configuration added for 'Pomelo.EntityFrameworkCore.MySql:SchemaNameTranslator', configuration added for 'Pomelo.EntityFrameworkCore.MySql:EnableIndexOptimizedBooleanColumns', configuration added for 'Pomelo.EntityFrameworkCore.MySql:LimitKeyedOrIndexedStringColumnLength', configuration added for 'Pomelo.EntityFrameworkCore.MySql:EnableStringComparisonTranslations', configuration added for 'Pomelo.EntityFrameworkCore.MySql:EnablePrimitiveCollectionsSupport'. 
+2024-03-26 14:29:08.5699|DEBUG|Microsoft.EntityFrameworkCore.Model|The index {'ArticleId'} was not created on entity type 'ArticleTags' as the properties are already covered by the index {'ArticleId', 'TagId'}. 
+2024-03-26 14:29:08.7097|WARN|Microsoft.EntityFrameworkCore.Model.Validation|Entity 'Articles' has a global query filter defined and is the required end of a relationship with the entity 'ArticleTags'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+2024-03-26 14:29:08.7218|WARN|Microsoft.EntityFrameworkCore.Model.Validation|Entity 'Articles' has a global query filter defined and is the required end of a relationship with the entity 'Comments'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information. 
+2024-03-26 14:29:09.0100|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 8.0.1 initialized 'ArticleDbContext' using provider 'Pomelo.EntityFrameworkCore.MySql:8.0.1' with options: ServerVersion=8.0.23-mysql  
+2024-03-26 14:29:09.2501|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller LitZhu.WebApi.Controllers.Article.ArticleTagsController (LitZhu.WebApi) 
+2024-03-26 14:29:09.2501|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'articleId' of type 'System.Guid' ... 
+2024-03-26 14:29:09.2598|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'articleId' of type 'System.Guid' using the name 'articleId' in request data ... 
+2024-03-26 14:29:09.2598|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'articleId' of type 'System.Guid'. 
+2024-03-26 14:29:09.2598|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'articleId' of type 'System.Guid'. 
+2024-03-26 14:29:09.2598|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'articleId' of type 'System.Guid' ... 
+2024-03-26 14:29:09.2598|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'articleId' of type 'System.Guid'. 
+2024-03-26 14:29:09.2598|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-26 14:29:09.2598|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-26 14:29:09.2598|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2024-03-26 14:29:09.2598|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2024-03-26 14:29:09.2759|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method LitZhu.WebApi.Controllers.Article.ArticleTagsController.GetArticleTags (LitZhu.WebApi) - Validation state: Valid 
+2024-03-26 14:29:09.2759|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method LitZhu.WebApi.Controllers.Article.ArticleTagsController.GetArticleTags (LitZhu.WebApi) with arguments (45026b26-8941-4bca-807a-06481f145aa5) 
+2024-03-26 14:29:09.3620|DEBUG|Microsoft.EntityFrameworkCore.Query|Compiling query expression: 
+'DbSet<Articles>()
+    .Include(x => x.Comments)
+    .Include(x => x.ArticleTagsList)
+    .ThenInclude(at => at.Tags)
+    .FirstOrDefault(x => x.Id == __articleId_0)' 
+2024-03-26 14:29:09.4218|DEBUG|Microsoft.EntityFrameworkCore.Query|Including navigation: 'Articles.Comments'. 
+2024-03-26 14:29:09.4218|DEBUG|Microsoft.EntityFrameworkCore.Query|Including navigation: 'Articles.ArticleTagsList'. 
+2024-03-26 14:29:09.4548|DEBUG|Microsoft.EntityFrameworkCore.Query|Including navigation: 'ArticleTags.Tags'. 
+2024-03-26 14:29:09.7740|WARN|Microsoft.EntityFrameworkCore.Query|Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. 
+2024-03-26 14:29:09.8109|DEBUG|Microsoft.EntityFrameworkCore.Query|Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Articles>(
+    asyncEnumerable: new SingleQueryingEnumerable<Articles>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Client Projections:
+                0 -> Dictionary<IProperty, int> { [Property: Articles.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Articles.Content (string) Required, 1], [Property: Articles.CreationTime (DateTime) Required, 2], [Property: Articles.DeletionTime (DateTime?), 3], [Property: Articles.Desc (string) Required, 4], [Property: Articles.Image (string) Required, 5], [Property: Articles.IsDeleted (bool) Required Index, 6], [Property: Articles.LastModificationTime (DateTime?), 7], [Property: Articles.Likes (int) Required, 8], [Property: Articles.Title (string) Required Index MaxLength(20), 9], [Property: Articles.UserId (Guid) Required, 10], [Property: Articles.Views (int) Required, 11] }
+                1 -> 0
+                2 -> Dictionary<IProperty, int> { [Property: Comments.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 12], [Property: Comments.ArticleId (Guid) Required FK Index, 13], [Property: Comments.Content (string) Required MaxLength(1000), 14], [Property: Comments.CreationTime (DateTime) Required, 15], [Property: Comments.LastModificationTime (DateTime?), 16], [Property: Comments.Likes (int) Required, 17], [Property: Comments.PId (Guid) Required, 18], [Property: Comments.Path (string) Required, 19], [Property: Comments.UserId (Guid) Required, 20] }
+                3 -> 12
+                4 -> Dictionary<IProperty, int> { [Property: ArticleTags.ArticleId (Guid) Required PK FK AfterSave:Throw, 21], [Property: ArticleTags.TagId (Guid) Required PK FK Index AfterSave:Throw, 22] }
+                5 -> Dictionary<IProperty, int> { [Property: Tags.Id (Guid) Required PK AfterSave:Throw ValueGenerated.OnAdd, 23], [Property: Tags.CreationTime (DateTime) Required, 24], [Property: Tags.DeletionTime (DateTime?), 25], [Property: Tags.IsDeleted (bool) Required Index, 26], [Property: Tags.LastModificationTime (DateTime?), 27], [Property: Tags.TagName (string) Required MaxLength(10), 28] }
+                6 -> 21
+                7 -> 22
+                8 -> 23
+            SELECT t.Id, t.Content, t.CreationTime, t.DeletionTime, t.Desc, t.Image, t.IsDeleted, t.LastModificationTime, t.Likes, t.Title, t.UserId, t.Views, c.Id, c.ArticleId, c.Content, c.CreationTime, c.LastModificationTime, c.Likes, c.PId, c.Path, c.UserId, t1.ArticleId, t1.TagId, t1.Id, t1.CreationTime, t1.DeletionTime, t1.IsDeleted, t1.LastModificationTime, t1.TagName
+            FROM 
+            (
+                SELECT TOP(1) a.Id, a.Content, a.CreationTime, a.DeletionTime, a.Desc, a.Image, a.IsDeleted, a.LastModificationTime, a.Likes, a.Title, a.UserId, a.Views
+                FROM Articles AS a
+                WHERE (a.IsDeleted == FALSE) && (a.Id == @__articleId_0)
+            ) AS t
+            LEFT JOIN Comments AS c ON t.Id == c.ArticleId
+            LEFT JOIN 
+            (
+                SELECT a0.ArticleId, a0.TagId, t0.Id, t0.CreationTime, t0.DeletionTime, t0.IsDeleted, t0.LastModificationTime, t0.TagName
+                FROM Articles_Tags AS a0
+                INNER JOIN 
+                (
+                    SELECT t2.Id, t2.CreationTime, t2.DeletionTime, t2.IsDeleted, t2.LastModificationTime, t2.TagName
+                    FROM Tags AS t2
+                    WHERE t2.IsDeleted == FALSE
+                ) AS t0 ON a0.TagId == t0.Id
+            ) AS t1 ON t.Id == t1.ArticleId
+            ORDER BY t.Id ASC, c.Id ASC, t1.ArticleId ASC, t1.TagId ASC), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Articles>, 
+        Article.Infrastructure.ArticleDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)' 
+2024-03-26 14:29:09.8890|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection. 
+2024-03-26 14:29:09.9020|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (6ms). 
+2024-03-26 14:29:09.9158|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'LitZhu' on server 'localhost'. 
+2024-03-26 14:29:10.1100|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'LitZhu' on server 'localhost'. 
+2024-03-26 14:29:10.1100|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'. 
+2024-03-26 14:29:10.1208|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (5ms). 
+2024-03-26 14:29:10.1396|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (24ms). 
+2024-03-26 14:29:10.1478|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__articleId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Content`, `t`.`CreationTime`, `t`.`DeletionTime`, `t`.`Desc`, `t`.`Image`, `t`.`IsDeleted`, `t`.`LastModificationTime`, `t`.`Likes`, `t`.`Title`, `t`.`UserId`, `t`.`Views`, `c`.`Id`, `c`.`ArticleId`, `c`.`Content`, `c`.`CreationTime`, `c`.`LastModificationTime`, `c`.`Likes`, `c`.`PId`, `c`.`Path`, `c`.`UserId`, `t1`.`ArticleId`, `t1`.`TagId`, `t1`.`Id`, `t1`.`CreationTime`, `t1`.`DeletionTime`, `t1`.`IsDeleted`, `t1`.`LastModificationTime`, `t1`.`TagName`
+FROM (
+    SELECT `a`.`Id`, `a`.`Content`, `a`.`CreationTime`, `a`.`DeletionTime`, `a`.`Desc`, `a`.`Image`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`Likes`, `a`.`Title`, `a`.`UserId`, `a`.`Views`
+    FROM `Articles` AS `a`
+    WHERE NOT (`a`.`IsDeleted`) AND (`a`.`Id` = @__articleId_0)
+    LIMIT 1
+) AS `t`
+LEFT JOIN `Comments` AS `c` ON `t`.`Id` = `c`.`ArticleId`
+LEFT JOIN (
+    SELECT `a0`.`ArticleId`, `a0`.`TagId`, `t0`.`Id`, `t0`.`CreationTime`, `t0`.`DeletionTime`, `t0`.`IsDeleted`, `t0`.`LastModificationTime`, `t0`.`TagName`
+    FROM `Articles_Tags` AS `a0`
+    INNER JOIN (
+        SELECT `t2`.`Id`, `t2`.`CreationTime`, `t2`.`DeletionTime`, `t2`.`IsDeleted`, `t2`.`LastModificationTime`, `t2`.`TagName`
+        FROM `Tags` AS `t2`
+        WHERE NOT (`t2`.`IsDeleted`)
+    ) AS `t0` ON `a0`.`TagId` = `t0`.`Id`
+) AS `t1` ON `t`.`Id` = `t1`.`ArticleId`
+ORDER BY `t`.`Id`, `c`.`Id`, `t1`.`ArticleId`, `t1`.`TagId` 
+2024-03-26 14:29:10.3059|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (149ms) [Parameters=[@__articleId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+SELECT `t`.`Id`, `t`.`Content`, `t`.`CreationTime`, `t`.`DeletionTime`, `t`.`Desc`, `t`.`Image`, `t`.`IsDeleted`, `t`.`LastModificationTime`, `t`.`Likes`, `t`.`Title`, `t`.`UserId`, `t`.`Views`, `c`.`Id`, `c`.`ArticleId`, `c`.`Content`, `c`.`CreationTime`, `c`.`LastModificationTime`, `c`.`Likes`, `c`.`PId`, `c`.`Path`, `c`.`UserId`, `t1`.`ArticleId`, `t1`.`TagId`, `t1`.`Id`, `t1`.`CreationTime`, `t1`.`DeletionTime`, `t1`.`IsDeleted`, `t1`.`LastModificationTime`, `t1`.`TagName`
+FROM (
+    SELECT `a`.`Id`, `a`.`Content`, `a`.`CreationTime`, `a`.`DeletionTime`, `a`.`Desc`, `a`.`Image`, `a`.`IsDeleted`, `a`.`LastModificationTime`, `a`.`Likes`, `a`.`Title`, `a`.`UserId`, `a`.`Views`
+    FROM `Articles` AS `a`
+    WHERE NOT (`a`.`IsDeleted`) AND (`a`.`Id` = @__articleId_0)
+    LIMIT 1
+) AS `t`
+LEFT JOIN `Comments` AS `c` ON `t`.`Id` = `c`.`ArticleId`
+LEFT JOIN (
+    SELECT `a0`.`ArticleId`, `a0`.`TagId`, `t0`.`Id`, `t0`.`CreationTime`, `t0`.`DeletionTime`, `t0`.`IsDeleted`, `t0`.`LastModificationTime`, `t0`.`TagName`
+    FROM `Articles_Tags` AS `a0`
+    INNER JOIN (
+        SELECT `t2`.`Id`, `t2`.`CreationTime`, `t2`.`DeletionTime`, `t2`.`IsDeleted`, `t2`.`LastModificationTime`, `t2`.`TagName`
+        FROM `Tags` AS `t2`
+        WHERE NOT (`t2`.`IsDeleted`)
+    ) AS `t0` ON `a0`.`TagId` = `t0`.`Id`
+) AS `t1` ON `t`.`Id` = `t1`.`ArticleId`
+ORDER BY `t`.`Id`, `c`.`Id`, `t1`.`ArticleId`, `t1`.`TagId` 
+2024-03-26 14:29:10.3216|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'LitZhu' on server 'localhost'. 
+2024-03-26 14:29:10.3397|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'LitZhu' on server 'localhost' is being disposed after spending 25ms reading results. 
+2024-03-26 14:29:10.3397|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'LitZhu' on server 'localhost'. 
+2024-03-26 14:29:10.3504|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'LitZhu' on server 'localhost' (6ms). 
+2024-03-26 14:29:10.3504|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method LitZhu.WebApi.Controllers.Article.ArticleTagsController.GetArticleTags (LitZhu.WebApi), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 1077.3189ms. 
+2024-03-26 14:29:10.3504|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2024-03-26 14:29:10.3504|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter. 
+2024-03-26 14:29:10.3504|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-26 14:29:10.3504|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter. 
+2024-03-26 14:29:10.3504|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2024-03-26 14:29:10.3504|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2024-03-26 14:29:10.3504|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.NotFoundObjectResult. 
+2024-03-26 14:29:10.3504|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter 
+2024-03-26 14:29:10.3673|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation. 
+2024-03-26 14:29:10.3673|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response. 
+2024-03-26 14:29:10.3673|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result. 
+2024-03-26 14:29:10.3673|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response. 
+2024-03-26 14:29:10.3673|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing NotFoundObjectResult, writing value of type 'LitZhu.WebApi.R'. 
+2024-03-26 14:29:10.5117|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.NotFoundObjectResult. 
+2024-03-26 14:29:10.5117|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2024-03-26 14:29:10.5117|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter. 
+2024-03-26 14:29:10.5117|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action LitZhu.WebApi.Controllers.Article.ArticleTagsController.GetArticleTags (LitZhu.WebApi) in 3100.6019ms 
+2024-03-26 14:29:10.5117|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'LitZhu.WebApi.Controllers.Article.ArticleTagsController.GetArticleTags (LitZhu.WebApi)' 
+2024-03-26 14:29:10.5117|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2DBNC20IV5" completed keep alive response. 
+2024-03-26 14:29:10.5231|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2DBNC20IV5" received FIN. 
+2024-03-26 14:29:10.5231|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2DBNC20IV5" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-03-26 14:29:10.5231|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ArticleDbContext' disposed. 
+2024-03-26 14:29:10.5231|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2DBNC20IV5" disconnecting. 
+2024-03-26 14:29:10.5231|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'LitZhu' on server 'localhost'. 
+2024-03-26 14:29:10.5231|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database 'LitZhu' on server 'localhost' (1ms). 
+2024-03-26 14:29:10.5231|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7290/api/ArticleTags/45026b26-8941-4bca-807a-06481f145aa5/Tags - 404 55 application/json;+charset=utf-8 3292.2806ms 
+2024-03-26 14:29:10.5231|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2DBNC20IV5" stopped. 

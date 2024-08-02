@@ -110,30 +110,31 @@ public class UserDomainService(
         var user = await _userRepository.FindUserByUsernameAsync(username);
         if (user == null) // 用户不存在
         {
-            return (VerifyUsernamePasswordResult.UsernameNotFound, token);
+            result = VerifyUsernamePasswordResult.UsernameNotFound;
+            return (result, token);
         }
 
         if (user.UserAccessFail.IsLockOuted()) // 用户被锁定
         {
             result = VerifyUsernamePasswordResult.Lockout;
-        }
-        else if (!user.VerifyPassword(password)) // 密码错误
-        {
-            result = VerifyUsernamePasswordResult.PasswordError;
+            return (result, token);
         }
 
-        if (result == VerifyUsernamePasswordResult.Ok)
-        {
-            // 登陆成功重置错误信息
-            user.UserAccessFail.Reset();
-            token = BuildToken(user);
-        }
-        else
+        if (!user.VerifyPassword(password)) // 密码错误
         {
             _logger.LogWarning("添加一次登录失败信息，用户名不在数据库中不会操作数据库添加数据");
+
             user.UserAccessFail.Fail();
+            await _userRepository.SaveUserAsync();
+
+            result = VerifyUsernamePasswordResult.PasswordError;
+            await _userRepository.AddNewLoginByUsernameHistoryAsync(username, result.ToString());
+            return (result, null);
         }
 
+        // 登陆成功重置错误信息
+        user.UserAccessFail.Reset();
+        token = BuildToken(user);
         // 添加用户登陆历史
         await _userRepository.AddNewLoginByUsernameHistoryAsync(username, result.ToString());
         await _userRepository.SaveUserAsync();

@@ -33,6 +33,10 @@ public class UserRepository(UserDbContext _db) : IUserRepository
 
     public async Task<Users> CreateUserAsync(Users user)
     {
+        if (await FindUserByUsernameAsync(user.Username) != null)
+        {
+            throw new Exception(nameof(CreateUserAsync) + "用户名已存在");
+        }
         var userCreateEntity = Users.Create(user.Username, user.Password);
         var userCreated = await _db.Users.AddAsync(userCreateEntity);
         return userCreated.Entity;

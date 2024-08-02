@@ -11,26 +11,6 @@ namespace User.Infrastructure.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropIndex(
-                name: "IX_Users_IsLockOut",
-                table: "Users");
-
-            migrationBuilder.DropIndex(
-                name: "IX_Users_Username",
-                table: "Users");
-
-            migrationBuilder.DropColumn(
-                name: "AccessFailedCount",
-                table: "Users");
-
-            migrationBuilder.DropColumn(
-                name: "IsLockOut",
-                table: "Users");
-
-            migrationBuilder.DropColumn(
-                name: "LockOutEnd",
-                table: "Users");
-
             migrationBuilder.AlterColumn<string>(
                 name: "Password",
                 table: "Users",
@@ -45,7 +25,7 @@ namespace User.Infrastructure.Migrations
             migrationBuilder.AlterColumn<string>(
                 name: "Email",
                 table: "UserLoginHistories",
-                type: "nvarchar(max)",
+                type: "varchar(255)",
                 nullable: true,
                 oldClrType: typeof(string),
                 oldType: "nvarchar(max)");
@@ -53,30 +33,30 @@ namespace User.Infrastructure.Migrations
             migrationBuilder.AddColumn<string>(
                 name: "Username",
                 table: "UserLoginHistories",
-                type: "nvarchar(max)",
+                type: "text",
                 nullable: true);
 
             migrationBuilder.CreateTable(
-                name: "UserAccessFails",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    IsLockOut = table.Column<bool>(type: "bit", nullable: false),
-                    LockOutEnd = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    AccessFailedCount = table.Column<int>(type: "int", nullable: false),
-                    CreationTime = table.Column<DateTime>(type: "datetime2", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_UserAccessFails", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_UserAccessFails_Users_UserId",
-                        column: x => x.UserId,
-                        principalTable: "Users",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                });
+                 name: "UserAccessFails",
+                 columns: table => new
+                 {
+                     Id = table.Column<Guid>(type: "char(36)", nullable: false),
+                     UserId = table.Column<Guid>(type: "char(36)", nullable: false),
+                     IsLockOut = table.Column<bool>(type: "bit", nullable: false),
+                     LockOutEnd = table.Column<DateTime>(type: "datetime", nullable: true),
+                     AccessFailedCount = table.Column<int>(type: "int", nullable: false),
+                     CreationTime = table.Column<DateTime>(type: "datetime", nullable: false)
+                 },
+                 constraints: table =>
+                 {
+                     table.PrimaryKey("PK_UserAccessFails", x => x.Id);
+                     table.ForeignKey(
+                         name: "FK_UserAccessFails_Users_UserId",
+                         column: x => x.UserId,
+                         principalTable: "Users",
+                         principalColumn: "Id",
+                         onDelete: ReferentialAction.Restrict);
+                 });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Users_Username",

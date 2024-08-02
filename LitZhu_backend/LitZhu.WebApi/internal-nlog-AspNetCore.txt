@@ -1,0 +1,158 @@
+2024-03-22 10:29:32.3315 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'extensions' in section 'targets'
+2024-03-22 10:29:32.3667 Info Registered target NLog.Targets.FileTarget(Name=defaultFile)
+2024-03-22 10:29:32.3667 Info Registered target NLog.Targets.FileTarget(Name=sysServicesFile)
+2024-03-22 10:29:32.3667 Info Registered target NLog.Targets.ColoredConsoleTarget(Name=targetConsole)
+2024-03-22 10:29:32.3935 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-03-22 10:29:32.4056 Info Validating config: TargetNames=targetConsole, sysServicesFile, defaultFile, ConfigItems=44, FilePath=D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\NLog.config
+2024-03-22 10:29:32.4201 Info Configuration initialized.
+2024-03-22 10:32:41.4808 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'extensions' in section 'targets'
+2024-03-22 10:32:41.5285 Info Registered target NLog.Targets.FileTarget(Name=defaultFile)
+2024-03-22 10:32:41.5285 Info Registered target NLog.Targets.FileTarget(Name=sysServicesFile)
+2024-03-22 10:32:41.5402 Info Registered target NLog.Targets.ColoredConsoleTarget(Name=targetConsole)
+2024-03-22 10:32:41.5615 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-03-22 10:32:41.5775 Info Validating config: TargetNames=targetConsole, sysServicesFile, defaultFile, ConfigItems=44, FilePath=D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\NLog.config
+2024-03-22 10:32:41.5956 Info Configuration initialized.
+2024-03-22 10:34:13.1470 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'extensions' in section 'targets'
+2024-03-22 10:34:13.2053 Info Registered target NLog.Targets.FileTarget(Name=defaultFile)
+2024-03-22 10:34:13.2110 Info Registered target NLog.Targets.FileTarget(Name=sysServicesFile)
+2024-03-22 10:34:13.2110 Info Registered target NLog.Targets.ColoredConsoleTarget(Name=targetConsole)
+2024-03-22 10:34:13.2448 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-03-22 10:34:13.2573 Info Validating config: TargetNames=targetConsole, sysServicesFile, defaultFile, ConfigItems=44, FilePath=D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\NLog.config
+2024-03-22 10:34:13.3246 Info Configuration initialized.
+2024-03-22 10:36:28.2917 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'extensions' in section 'targets'
+2024-03-22 10:36:28.3550 Info Registered target NLog.Targets.FileTarget(Name=defaultFile)
+2024-03-22 10:36:28.3550 Info Registered target NLog.Targets.FileTarget(Name=sysServicesFile)
+2024-03-22 10:36:28.3681 Info Registered target NLog.Targets.ColoredConsoleTarget(Name=targetConsole)
+2024-03-22 10:36:28.3927 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-03-22 10:36:28.4050 Info Validating config: TargetNames=targetConsole, sysServicesFile, defaultFile, ConfigItems=44, FilePath=D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\NLog.config
+2024-03-22 10:36:28.4206 Info Configuration initialized.
+2024-03-22 10:42:18.0365 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'extensions' in section 'targets'
+2024-03-22 10:42:18.0879 Info Registered target NLog.Targets.FileTarget(Name=defaultFile)
+2024-03-22 10:42:18.0879 Info Registered target NLog.Targets.FileTarget(Name=sysServicesFile)
+2024-03-22 10:42:18.1021 Info Registered target NLog.Targets.ColoredConsoleTarget(Name=targetConsole)
+2024-03-22 10:42:18.1410 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-03-22 10:42:18.1598 Info Validating config: TargetNames=targetConsole, sysServicesFile, defaultFile, ConfigItems=44, FilePath=D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\NLog.config
+2024-03-22 10:42:18.1774 Info Configuration initialized.
+2024-03-22 10:50:08.0633 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'extensions' in section 'targets'
+2024-03-22 10:50:08.0964 Info Registered target NLog.Targets.FileTarget(Name=defaultFile)
+2024-03-22 10:50:08.0997 Info Registered target NLog.Targets.FileTarget(Name=sysServicesFile)
+2024-03-22 10:50:08.0997 Info Registered target NLog.Targets.ColoredConsoleTarget(Name=targetConsole)
+2024-03-22 10:50:08.1236 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-03-22 10:50:08.1310 Info Validating config: TargetNames=targetConsole, sysServicesFile, defaultFile, ConfigItems=44, FilePath=D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\NLog.config
+2024-03-22 10:50:08.1310 Info Configuration initialized.
+2024-03-22 10:59:44.3293 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'extensions' in section 'targets'
+2024-03-22 10:59:44.3927 Info Registered target NLog.Targets.FileTarget(Name=defaultFile)
+2024-03-22 10:59:44.3963 Info Registered target NLog.Targets.FileTarget(Name=sysServicesFile)
+2024-03-22 10:59:44.3963 Info Registered target NLog.Targets.ColoredConsoleTarget(Name=targetConsole)
+2024-03-22 10:59:44.4239 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-03-22 10:59:44.4341 Info Validating config: TargetNames=targetConsole, sysServicesFile, defaultFile, ConfigItems=44, FilePath=D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\NLog.config
+2024-03-22 10:59:44.4542 Info Configuration initialized.
+2024-03-22 11:01:16.4759 Info Registered target NLog.Targets.FileTarget(Name=defaultFile)
+2024-03-22 11:01:16.5048 Info Registered target NLog.Targets.FileTarget(Name=sysServicesFile)
+2024-03-22 11:01:16.5048 Info Registered target NLog.Targets.ColoredConsoleTarget(Name=targetConsole)
+2024-03-22 11:01:16.5275 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-03-22 11:01:16.5420 Info Validating config: TargetNames=targetConsole, sysServicesFile, defaultFile, ConfigItems=44, FilePath=D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\NLog.config
+2024-03-22 11:01:16.5540 Info Configuration initialized.
+2024-03-22 11:01:51.6568 Info Registered target NLog.Targets.FileTarget(Name=defaultFile)
+2024-03-22 11:01:51.6918 Info Registered target NLog.Targets.FileTarget(Name=sysServicesFile)
+2024-03-22 11:01:51.6977 Info Registered target NLog.Targets.ColoredConsoleTarget(Name=targetConsole)
+2024-03-22 11:01:51.7216 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-03-22 11:01:51.7363 Info Validating config: TargetNames=targetConsole, sysServicesFile, defaultFile, ConfigItems=44, FilePath=D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\NLog.config
+2024-03-22 11:01:51.7563 Info Configuration initialized.
+2024-03-22 11:02:23.9135 Info Registered target NLog.Targets.FileTarget(Name=defaultFile)
+2024-03-22 11:02:23.9519 Info Registered target NLog.Targets.FileTarget(Name=sysServicesFile)
+2024-03-22 11:02:23.9598 Info Registered target NLog.Targets.ColoredConsoleTarget(Name=targetConsole)
+2024-03-22 11:02:23.9847 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-03-22 11:02:23.9972 Info Validating config: TargetNames=targetConsole, sysServicesFile, defaultFile, ConfigItems=44, FilePath=D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\NLog.config
+2024-03-22 11:02:24.0140 Info Configuration initialized.
+2024-03-22 11:02:43.2040 Info Registered target NLog.Targets.FileTarget(Name=defaultFile)
+2024-03-22 11:02:43.2349 Info Registered target NLog.Targets.FileTarget(Name=sysServicesFile)
+2024-03-22 11:02:43.2430 Info Registered target NLog.Targets.ColoredConsoleTarget(Name=targetConsole)
+2024-03-22 11:02:43.2675 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-03-22 11:02:43.2774 Info Validating config: TargetNames=targetConsole, sysServicesFile, defaultFile, ConfigItems=44, FilePath=D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\NLog.config
+2024-03-22 11:02:43.2927 Info Configuration initialized.
+2024-03-22 11:03:02.9142 Info Registered target NLog.Targets.FileTarget(Name=defaultFile)
+2024-03-22 11:03:02.9404 Info Registered target NLog.Targets.FileTarget(Name=sysServicesFile)
+2024-03-22 11:03:02.9463 Info Registered target NLog.Targets.ColoredConsoleTarget(Name=targetConsole)
+2024-03-22 11:03:02.9620 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-03-22 11:03:02.9620 Info Validating config: TargetNames=targetConsole, sysServicesFile, defaultFile, ConfigItems=44, FilePath=D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\NLog.config
+2024-03-22 11:03:02.9822 Info Configuration initialized.
+2024-03-22 11:21:14.3808 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'extensions' in section 'targets'
+2024-03-22 11:21:14.4465 Info Registered target NLog.Targets.FileTarget(Name=defaultFile)
+2024-03-22 11:21:14.4465 Info Registered target NLog.Targets.FileTarget(Name=sysServicesFile)
+2024-03-22 11:21:14.4580 Info Registered target NLog.Targets.ColoredConsoleTarget(Name=targetConsole)
+2024-03-22 11:21:14.4807 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-03-22 11:21:14.4987 Info Validating config: TargetNames=targetConsole, sysServicesFile, defaultFile, ConfigItems=44, FilePath=D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\NLog.config
+2024-03-22 11:21:14.5208 Info Configuration initialized.
+2024-03-22 11:22:58.9405 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'extensions' in section 'targets'
+2024-03-22 11:22:59.0200 Info Registered target NLog.Targets.FileTarget(Name=defaultFile)
+2024-03-22 11:22:59.0200 Info Registered target NLog.Targets.FileTarget(Name=sysServicesFile)
+2024-03-22 11:22:59.0200 Info Registered target NLog.Targets.ColoredConsoleTarget(Name=targetConsole)
+2024-03-22 11:22:59.0497 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-03-22 11:22:59.0610 Info Validating config: TargetNames=sysServicesFile, defaultFile, ConfigItems=43, FilePath=D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\NLog.config
+2024-03-22 11:22:59.0703 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: targetConsole
+2024-03-22 11:22:59.0931 Info Configuration initialized.
+2024-03-22 11:23:52.7907 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'extensions' in section 'targets'
+2024-03-22 11:23:52.8554 Info Registered target NLog.Targets.FileTarget(Name=defaultFile)
+2024-03-22 11:23:52.8554 Info Registered target NLog.Targets.FileTarget(Name=sysServicesFile)
+2024-03-22 11:23:52.8554 Info Registered target NLog.Targets.ColoredConsoleTarget(Name=targetConsole)
+2024-03-22 11:23:52.8835 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-03-22 11:23:52.8835 Info Validating config: TargetNames=sysServicesFile, defaultFile, ConfigItems=43, FilePath=D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\NLog.config
+2024-03-22 11:23:52.8962 Warn Unused target detected. Add a rule for this target to the configuration. TargetName: targetConsole
+2024-03-22 11:23:52.8962 Info Configuration initialized.
+2024-03-22 11:24:31.8829 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'extensions' in section 'targets'
+2024-03-22 11:24:31.9359 Info Registered target NLog.Targets.FileTarget(Name=defaultFile)
+2024-03-22 11:24:31.9359 Info Registered target NLog.Targets.FileTarget(Name=sysServicesFile)
+2024-03-22 11:24:31.9521 Warn Error has been raised. Exception: NLog.NLogConfigurationException: 'ColoredConsoleTarget' cannot assign unknown property 'archiveAboveSize'='1000000'
+   at NLog.Config.LoggingConfigurationParser.SetPropertyValueFromString[T](T targetObject, String propertyName, String propertyValue, ValidatedConfigurationElement element)
+2024-03-22 11:24:31.9987 Warn Error has been raised. Exception: NLog.NLogConfigurationException: 'ColoredConsoleTarget' cannot assign unknown property 'maxArchiveFiles'='3'
+   at NLog.Config.LoggingConfigurationParser.SetPropertyValueFromString[T](T targetObject, String propertyName, String propertyValue, ValidatedConfigurationElement element)
+2024-03-22 11:24:31.9987 Warn Error has been raised. Exception: NLog.NLogConfigurationException: 'ColoredConsoleTarget' cannot assign unknown property 'fileName'='nlog-ColoredConsole-${shortdate}.log'
+   at NLog.Config.LoggingConfigurationParser.SetPropertyValueFromString[T](T targetObject, String propertyName, String propertyValue, ValidatedConfigurationElement element)
+2024-03-22 11:24:31.9987 Info Registered target NLog.Targets.ColoredConsoleTarget(Name=targetConsole)
+2024-03-22 11:24:32.0290 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-03-22 11:24:32.0534 Info Validating config: TargetNames=targetConsole, sysServicesFile, defaultFile, ConfigItems=44, FilePath=D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\NLog.config
+2024-03-22 11:24:32.0769 Info Configuration initialized.
+2024-03-22 11:26:02.5754 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'extensions' in section 'targets'
+2024-03-22 11:26:02.6377 Info Registered target NLog.Targets.FileTarget(Name=defaultFile)
+2024-03-22 11:26:02.6377 Info Registered target NLog.Targets.FileTarget(Name=sysServicesFile)
+2024-03-22 11:26:02.6449 Warn Error has been raised. Exception: NLog.NLogConfigurationException: 'ColoredConsoleTarget' cannot assign unknown property 'archiveAboveSize'='1000000'
+   at NLog.Config.LoggingConfigurationParser.SetPropertyValueFromString[T](T targetObject, String propertyName, String propertyValue, ValidatedConfigurationElement element)
+2024-03-22 11:26:02.6820 Warn Error has been raised. Exception: NLog.NLogConfigurationException: 'ColoredConsoleTarget' cannot assign unknown property 'maxArchiveFiles'='3'
+   at NLog.Config.LoggingConfigurationParser.SetPropertyValueFromString[T](T targetObject, String propertyName, String propertyValue, ValidatedConfigurationElement element)
+2024-03-22 11:26:02.6820 Warn Error has been raised. Exception: NLog.NLogConfigurationException: 'ColoredConsoleTarget' cannot assign unknown property 'fileName'='nlog-ColoredConsole-${shortdate}.log'
+   at NLog.Config.LoggingConfigurationParser.SetPropertyValueFromString[T](T targetObject, String propertyName, String propertyValue, ValidatedConfigurationElement element)
+2024-03-22 11:26:02.6820 Info Registered target NLog.Targets.ColoredConsoleTarget(Name=targetConsole)
+2024-03-22 11:26:02.7062 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-03-22 11:26:02.7166 Info Validating config: TargetNames=targetConsole, sysServicesFile, defaultFile, ConfigItems=44, FilePath=D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\NLog.config
+2024-03-22 11:26:02.7292 Info Configuration initialized.
+2024-03-22 11:29:26.4183 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'extensions' in section 'targets'
+2024-03-22 11:29:26.4690 Info Registered target NLog.Targets.FileTarget(Name=defaultFile)
+2024-03-22 11:29:26.4752 Info Registered target NLog.Targets.FileTarget(Name=sysServicesFile)
+2024-03-22 11:29:26.4752 Info Registered target NLog.Targets.ColoredConsoleTarget(Name=targetConsole)
+2024-03-22 11:29:26.5135 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-03-22 11:29:26.5366 Info Validating config: TargetNames=targetConsole, sysServicesFile, defaultFile, ConfigItems=44, FilePath=D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\NLog.config
+2024-03-22 11:29:26.5655 Info Configuration initialized.
+2024-03-22 11:32:01.1168 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'extensions' in section 'targets'
+2024-03-22 11:32:01.1771 Info Registered target NLog.Targets.FileTarget(Name=defaultFile)
+2024-03-22 11:32:01.1771 Info Registered target NLog.Targets.FileTarget(Name=sysServicesFile)
+2024-03-22 11:32:01.1771 Warn Error has been raised. Exception: NLog.NLogConfigurationException: 'ColoredConsoleTarget' cannot assign unknown property 'fileName'='nlogs-ColoredConsole-${shortdate}.log'
+   at NLog.Config.LoggingConfigurationParser.SetPropertyValueFromString[T](T targetObject, String propertyName, String propertyValue, ValidatedConfigurationElement element)
+2024-03-22 11:32:01.2319 Info Registered target NLog.Targets.ColoredConsoleTarget(Name=targetConsole)
+2024-03-22 11:32:01.2533 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-03-22 11:32:01.2650 Info Validating config: TargetNames=targetConsole, sysServicesFile, defaultFile, ConfigItems=44, FilePath=D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\NLog.config
+2024-03-22 11:32:01.2821 Info Configuration initialized.
+2024-03-22 11:43:00.0045 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'extensions' in section 'targets'
+2024-03-22 11:43:00.0504 Info Registered target NLog.Targets.FileTarget(Name=defaultFile)
+2024-03-22 11:43:00.0541 Info Registered target NLog.Targets.FileTarget(Name=sysServicesFile)
+2024-03-22 11:43:00.0541 Info Registered target NLog.Targets.ColoredConsoleTarget(Name=targetConsole)
+2024-03-22 11:43:00.0833 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-03-22 11:43:00.0987 Info Validating config: TargetNames=targetConsole, sysServicesFile, defaultFile, ConfigItems=44, FilePath=D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\NLog.config
+2024-03-22 11:43:00.1214 Info Configuration initialized.
+2024-03-22 11:46:25.6778 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Unrecognized element 'extensions' in section 'targets'
+2024-03-22 11:46:25.7120 Info Registered target NLog.Targets.FileTarget(Name=defaultFile)
+2024-03-22 11:46:25.7120 Info Registered target NLog.Targets.FileTarget(Name=sysServicesFile)
+2024-03-22 11:46:25.7120 Info Registered target NLog.Targets.ColoredConsoleTarget(Name=targetConsole)
+2024-03-22 11:46:25.7414 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-03-22 11:46:25.7540 Info Validating config: TargetNames=targetConsole, sysServicesFile, defaultFile, ConfigItems=44, FilePath=D:\Desktop\website\litzhu\LitZhu_backend\LitZhu.WebApi\bin\Debug\net8.0\NLog.config
+2024-03-22 11:46:25.7540 Info Configuration initialized.

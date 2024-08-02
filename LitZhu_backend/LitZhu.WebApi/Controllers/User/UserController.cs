@@ -11,24 +11,39 @@ namespace LitZhu.WebApi.Controllers.User;
 [ApiController]
 public class UserController(IUserRepository _userRepository, IMapper _mapper) : ControllerBase
 {
+
     [HttpPost("Username")]
     public async Task<ActionResult<UserDto>> CreateUserByUsername(UserCreateByUsernameDto createDto)
     {
-        var user = _mapper.Map<Users>(createDto);
-        var result = await _userRepository.CreateUserAsync(user);
-        await _userRepository.SaveUserAsync();
+        try
+        {
+            var user = _mapper.Map<Users>(createDto);
+            var result = await _userRepository.CreateUserAsync(user);
+            await _userRepository.SaveUserAsync();
 
-        var userDto = _mapper.Map<UserDto>(result);
-        return Ok(R.Success(userDto));
+            var userDto = _mapper.Map<UserDto>(result);
+            return Ok(R.Success(userDto));
+        }
+        catch (Exception e)
+        {
+            return BadRequest(R.Fail(e.Message));
+        }
     }
 
     [HttpPost("Email")]
     public async Task<ActionResult<UserDto>> CreateUserByEMail(UserCreateByEmailDto createDto)
     {
-        var user = _mapper.Map<Users>(createDto);
-        var result = await _userRepository.CreateUserAsync(user);
-        await _userRepository.SaveUserAsync();
-        return Ok(R.Success(result));
+        try
+        {
+            var user = _mapper.Map<Users>(createDto);
+            var result = await _userRepository.CreateUserAsync(user);
+            await _userRepository.SaveUserAsync();
+            return Ok(R.Success(result));
+        }
+        catch (Exception e)
+        {
+            return BadRequest(R.Fail(e.Message));
+        }
     }
 
     [HttpGet("{userId}")]

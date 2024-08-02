@@ -1,0 +1,193 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "ColorCode.Portable/1.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/portable45-net45+win8+wp8+wpa81/ColorCode.dll": {}
+        },
+        "runtime": {
+          "lib/portable45-net45+win8+wp8+wpa81/ColorCode.dll": {}
+        }
+      },
+      "Markdig/0.34.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Markdig.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Markdig.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Markdig.SyntaxHighlighting/1.1.7": {
+        "type": "package",
+        "dependencies": {
+          "ColorCode.Portable": "1.0.3",
+          "Markdig": "0.11.0"
+        },
+        "compile": {
+          "lib/portable45-net45+win8+wp8+wpa81/Markdig.SyntaxHighlighting.dll": {}
+        },
+        "runtime": {
+          "lib/portable45-net45+win8+wp8+wpa81/Markdig.SyntaxHighlighting.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ColorCode.Portable/1.0.3": {
+      "sha512": "GYX9N87XT7L2+/SL3OFSxFn2tKnnsmhBkCXrn3o+R2mKTLD2R/PuSasBnsfa0tSSiXNjs8pxVPxI13kU0j28qA==",
+      "type": "package",
+      "path": "colorcode.portable/1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "colorcode.portable.1.0.3.nupkg.sha512",
+        "colorcode.portable.nuspec",
+        "lib/portable45-net45+win8+wp8+wpa81/ColorCode.dll"
+      ]
+    },
+    "Markdig/0.34.0": {
+      "sha512": "kUS8Y/oW2Cshwq3kv08Lz5hpMjt9MuAaDIGxv86d0RtEUUe4xKKXxdZYS7bV0ZXRfeAAOfjYIrt7zybcIOYvmg==",
+      "type": "package",
+      "path": "markdig/0.34.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net462/Markdig.dll",
+        "lib/net462/Markdig.xml",
+        "lib/net6.0/Markdig.dll",
+        "lib/net6.0/Markdig.xml",
+        "lib/net8.0/Markdig.dll",
+        "lib/net8.0/Markdig.xml",
+        "lib/netstandard2.0/Markdig.dll",
+        "lib/netstandard2.0/Markdig.xml",
+        "lib/netstandard2.1/Markdig.dll",
+        "lib/netstandard2.1/Markdig.xml",
+        "markdig.0.34.0.nupkg.sha512",
+        "markdig.nuspec",
+        "markdig.png",
+        "readme.md"
+      ]
+    },
+    "Markdig.SyntaxHighlighting/1.1.7": {
+      "sha512": "BDCVfU194qruwOSspgK9S0vOco1xZfXYExegf64yzTs99XD1+3032FRz3fDFepcDMz0PSklMHGMqm0IlI/395Q==",
+      "type": "package",
+      "path": "markdig.syntaxhighlighting/1.1.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/portable45-net45+win8+wp8+wpa81/Markdig.SyntaxHighlighting.dll",
+        "markdig.syntaxhighlighting.1.1.7.nupkg.sha512",
+        "markdig.syntaxhighlighting.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Markdig >= 0.34.0",
+      "Markdig.SyntaxHighlighting >= 1.1.7"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\25968\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu,Markdown\\LitZhu,Markdown.csproj",
+      "projectName": "LitZhu,Markdown",
+      "projectPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu,Markdown\\LitZhu,Markdown.csproj",
+      "packagesPath": "C:\\Users\\25968\\.nuget\\packages\\",
+      "outputPath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu,Markdown\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\25968\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "Markdig": {
+            "target": "Package",
+            "version": "[0.34.0, )"
+          },
+          "Markdig.SyntaxHighlighting": {
+            "target": "Package",
+            "version": "[1.1.7, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1”而不是项目目标框架“net8.0”还原包“ColorCode.Portable 1.0.3”。此包可能与项目不完全兼容。",
+      "libraryId": "ColorCode.Portable",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1”而不是项目目标框架“net8.0”还原包“Markdig.SyntaxHighlighting 1.1.7”。此包可能与项目不完全兼容。",
+      "libraryId": "Markdig.SyntaxHighlighting",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}

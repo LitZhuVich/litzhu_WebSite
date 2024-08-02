@@ -1,23 +1,36 @@
 ﻿using Microsoft.Extensions.Configuration;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.IO;
 
 namespace LitZhu.Infrastructure.EFCore;
 
 public class ConnectionString
 {
-    public string SqlServerConnection { get; set; }
-    //public string MySqlConnection { get; set; }  = "Data Source = localhost; Database=LitZhu;User ID = root; Password=admin123;pooling=true;CharSet=utf8;port=3306;sslmode=none";
-    public string MySqlConnection { get; set; } = "Server=localhost;Port=3306;Database=LitZhu;Uid=root;Pwd=admin123;";
-    
-    public ConnectionString(IConfiguration configuration)
-    {
-        // TODO:3.15需修改
-        //SqlServerConnection = "Data Source=.;Initial Catalog=LitZhu;Integrated Security=True;Trust Server Certificate=True";
-        //MySqlConnection = configuration.GetConnectionString("ConnectionStrings");
-        //MySqlConnection = "server = localhost; port = 3306; database = LitZhu; user = root; password = admin123";
-    }
+    private static IConfiguration? _configuration;
 
-    public ConnectionString()
+    /// <summary>
+    /// 获取应用程序配置信息
+    /// </summary>
+    /// <returns>返回 IConfiguration 实例</returns>
+    public static IConfiguration GetConfiguration()
     {
+        if (_configuration == null)
+        {
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json");
+
+            _configuration = builder.Build();
+        }
+
+        return _configuration;
     }
+    /// <summary>
+    /// 获取SqlServer连接字符串
+    /// </summary>
+    public static string? SqlServerConnection => GetConfiguration()["ConnectionStrings:SqlServerConnection"];
+
+    /// <summary>
+    /// 获取MySql连接字符串
+    /// </summary>
+    public static string? MySqlConnection => GetConfiguration()["ConnectionStrings:MySqlServerConnection"];
 }

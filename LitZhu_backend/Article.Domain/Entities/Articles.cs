@@ -1,4 +1,5 @@
 ﻿using LitZhu.DomainCommons.Models;
+using System.Reflection;
 
 namespace Article.Domain.Entities;
 
@@ -11,6 +12,7 @@ public class Articles : AggregateRootEntity
     public Guid UserId { get; private set; } // 作者Id
     public int Likes { get; private set; } // 点赞数
     public int Views { get; private set; } // 浏览数
+
     public List<Comments> Comments { get; private set; } = []; // 评论
     public List<ArticleTags> ArticleTagsList { get; private set; } = []; // 文章标签
 
@@ -32,35 +34,28 @@ public class Articles : AggregateRootEntity
     {
         foreach (var item in update)
         {
-            switch (item.Key)
+            PropertyInfo? property = GetType().GetProperty(item.Key, BindingFlags.IgnoreCase | BindingFlags.Public | BindingFlags.Instance);
+            if (property != null && property.CanWrite)
             {
-                case "image":
-                    SetImage(item.Value);
-                    break;
-                case "title":
-                    SetTitle(item.Value);
-                    break;
-                case "content":
-                    SetContent(item.Value);
-                    break;
-                case "likes":
-                    SetLike(int.Parse(item.Value));
-                    break;
-                case "views":
-                    SetView(int.Parse(item.Value));
-                    break;
-                case "desc":
-                    SetDesc(item.Value);
-                    break;
-                default:
-                    throw new Exception("无效的参数");
+                if (property.PropertyType == typeof(int))
+                {
+                    property.SetValue(this, int.Parse(item.Value));
+                }
+                else
+                {
+                    property.SetValue(this, item.Value);
+                }
+            }
+            else
+            {
+                throw new Exception("无效的参数");
             }
         }
     }
 
     /// <summary>
     /// 获取当前文章的标签
-    /// </summary>
+    /// </summary>   
     /// <returns></returns>
     public List<Tags> GetTags()
     {

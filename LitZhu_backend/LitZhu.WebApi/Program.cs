@@ -2,10 +2,12 @@ using Article.Infrastructure;
 using LitZhu.JWT;
 using LitZhu.WebApi;
 using Microsoft.AspNetCore.Builder;
+using NLog.Extensions.Logging;
 using StackExchange.Redis;
 using User.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
+
 
 // Add services to the container.
 
@@ -15,6 +17,18 @@ builder.Services.AddControllers().AddNewtonsoftJson(opt =>
     opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
 });
 
+// 配置日志记录，将控制台记录级别设置为Error或更高级别
+builder.Services.AddLogging(builder =>
+{
+    builder.AddNLog();
+    builder.SetMinimumLevel(LogLevel.Debug);
+    builder.AddFilter("Microsoft.EntityFrameworkCore.Model.Validation", LogLevel.None); // 过滤掉特定的警告消息
+    builder.AddFilter("Microsoft.EntityFrameworkCore.Database.Command", LogLevel.None); // 过滤SQL信息
+    //builder.AddFilter("Microsoft", LogLevel.None);
+    //builder.AddFilter("System", LogLevel.None);
+    builder.AddFilter("LitZhu", LogLevel.Debug); // 将您的命名空间替换为您自己的命名空间
+});
+
 // 添加AutoMapper依赖
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 // 缓存
@@ -22,7 +36,7 @@ builder.Services.AddDistributedMemoryCache();
 // NoSql Redis  : private readonly ConnectionMultiplexer _Redis;
 builder.Services.AddSingleton(provider =>
 {
-    string? conn = builder.Configuration.GetConnectionString("RedisConnection");
+    string conn = builder.Configuration.GetConnectionString("RedisConnection")!;
 
     var configuration = ConfigurationOptions.Parse(conn);
     return ConnectionMultiplexer.Connect(configuration);

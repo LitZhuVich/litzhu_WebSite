@@ -15,7 +15,6 @@ public static class AddArticleDomainServicesExtensions
         services.AddScoped<IArticleTagRepository, ArticleTagRepository>();
         services.AddScoped<ICommentRepository, CommentRepository>();
         services.AddScoped<ArticleDomainService>();
-
         return services;
     }
 }

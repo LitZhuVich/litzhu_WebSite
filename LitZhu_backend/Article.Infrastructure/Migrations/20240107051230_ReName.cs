@@ -34,7 +34,7 @@ namespace Article.Infrastructure.Migrations
             migrationBuilder.AlterColumn<string>(
                 name: "TagName",
                 table: "Tags",
-                type: "nvarchar(10)",
+                type: "varchar(10)",
                 maxLength: 10,
                 nullable: false,
                 oldClrType: typeof(string),

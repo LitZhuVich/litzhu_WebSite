@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "dgSpecHash": "/gW2bczrgAs=",
+  "success": true,
+  "projectFilePath": "D:\\Desktop\\website\\litzhu\\LitZhu_backend\\Commons\\LitZhu,Markdown\\LitZhu,Markdown.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\25968\\.nuget\\packages\\colorcode.portable\\1.0.3\\colorcode.portable.1.0.3.nupkg.sha512",
+    "C:\\Users\\25968\\.nuget\\packages\\markdig\\0.34.0\\markdig.0.34.0.nupkg.sha512",
+    "C:\\Users\\25968\\.nuget\\packages\\markdig.syntaxhighlighting\\1.1.7\\markdig.syntaxhighlighting.1.1.7.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1”而不是项目目标框架“net8.0”还原包“ColorCode.Portable 1.0.3”。此包可能与项目不完全兼容。",
+      "libraryId": "ColorCode.Portable",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "已使用“.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1”而不是项目目标框架“net8.0”还原包“Markdig.SyntaxHighlighting 1.1.7”。此包可能与项目不完全兼容。",
+      "libraryId": "Markdig.SyntaxHighlighting",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}

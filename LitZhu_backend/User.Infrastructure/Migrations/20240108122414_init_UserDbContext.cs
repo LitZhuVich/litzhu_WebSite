@@ -15,29 +15,27 @@ namespace User.Infrastructure.Migrations
                 name: "Roles",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    RoleName = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
-                    RoleDesc = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Id = table.Column<string>(type: "CHAR(36)", nullable: false),
+                    RoleName = table.Column<string>(type: "varchar(10)", maxLength: 10, nullable: false),
+                    RoleDesc = table.Column<string>(type: "text", nullable: false),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false),
-                    CreationTime = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    DeletionTime = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    LastModificationTime = table.Column<DateTime>(type: "datetime2", nullable: true)
+                    CreationTime = table.Column<DateTime>(type: "DATETIME", nullable: false),
+                    DeletionTime = table.Column<DateTime>(type: "DATETIME", nullable: true),
+                    LastModificationTime = table.Column<DateTime>(type: "DATETIME", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Roles", x => x.Id)
-                        .Annotation("SqlServer:Clustered", false);
+                    table.PrimaryKey("PK_Roles", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
                 name: "UserLoginHistories",
                 columns: table => new
                 {
-                    Id = table.Column<long>(type: "bigint", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: true),
-                    LoginTime = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Message = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Id = table.Column<long>(type: "bigint", nullable: false),
+                    UserId = table.Column<string>(type: "CHAR(36)", nullable: true),
+                    LoginTime = table.Column<DateTime>(type: "DATETIME", nullable: false),
+                    Message = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -48,32 +46,31 @@ namespace User.Infrastructure.Migrations
                 name: "Users",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Username = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
-                    Password = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
-                    Avatar = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Phone = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    IsLockOut = table.Column<bool>(type: "bit", nullable: false),
-                    LockOutEnd = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    Id = table.Column<string>(type: "CHAR(36)", nullable: false),
+                    Username = table.Column<string>(type: "varchar(10)", maxLength: 10, nullable: false),
+                    Password = table.Column<string>(type: "varchar(20)", maxLength: 20, nullable: false),
+                    Avatar = table.Column<string>(type: "text", nullable: true),
+                    Email = table.Column<string>(type: "text", nullable: true),
+                    Phone = table.Column<string>(type: "text", nullable: true),
+                    IsLockOut = table.Column<bool>(type: "tinyint(1)", nullable: false),
+                    LockOutEnd = table.Column<DateTime>(type: "DATETIME", nullable: true),
                     AccessFailedCount = table.Column<int>(type: "int", nullable: false),
-                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
-                    CreationTime = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    DeletionTime = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    LastModificationTime = table.Column<DateTime>(type: "datetime2", nullable: true)
+                    IsDeleted = table.Column<bool>(type: "tinyint(1)", nullable: false),
+                    CreationTime = table.Column<DateTime>(type: "DATETIME", nullable: false),
+                    DeletionTime = table.Column<DateTime>(type: "DATETIME", nullable: true),
+                    LastModificationTime = table.Column<DateTime>(type: "DATETIME", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Users", x => x.Id)
-                        .Annotation("SqlServer:Clustered", false);
+                    table.PrimaryKey("PK_Users", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
                 name: "Users_Roles",
                 columns: table => new
                 {
-                    UserId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    RoleId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                    UserId = table.Column<string>(type: "CHAR(36)", nullable: false),
+                    RoleId = table.Column<string>(type: "CHAR(36)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -91,6 +88,7 @@ namespace User.Infrastructure.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
+
 
             migrationBuilder.CreateIndex(
                 name: "IX_Roles_IsDeleted",

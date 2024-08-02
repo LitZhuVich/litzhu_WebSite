@@ -76,7 +76,7 @@ public class ArticleTagsController
         {
             return NotFound(R.Fail("文章不存在"));
         }
-
+        var asd = article.GetTags();
         var tagsDto = _mapper.Map<List<TagDto>>(article.GetTags());
         return Ok(R.Success(tagsDto));
     }

@@ -46,6 +46,7 @@ public static class AuthenticationExtensions
 
     public static IServiceCollection AddJwtServices(this IServiceCollection services)
     {
+
         services.AddScoped<IJwtService, JwtService>();
         services.AddSingleton<IAuthorizationMiddlewareResultHandler, CustomAuthorizationMiddlewareResultHandler>();
 

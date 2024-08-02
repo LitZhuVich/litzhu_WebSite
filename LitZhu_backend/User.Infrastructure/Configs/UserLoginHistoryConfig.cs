@@ -11,6 +11,11 @@ public class UserLoginHistoryConfig : IEntityTypeConfiguration<UserLoginHistory>
         builder.ToTable("UserLoginHistories");
         builder.HasKey(x => x.Id);
 
+        builder.Property(e => e.Id)
+            .HasColumnType("BIGINT")
+            .ValueGeneratedOnAdd()
+            .UseIdentityColumn();
+
         builder.HasIndex(x => x.UserId);  
     }
 }

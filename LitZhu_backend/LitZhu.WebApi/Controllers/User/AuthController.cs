@@ -1,6 +1,7 @@
 ﻿using LitZhu.JWT;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using StackExchange.Redis;
 using User.Domain;
 using User.Domain.Entities;
@@ -62,7 +63,7 @@ public class AuthController(
     /// 验证用户名密码
     /// </summary>
     /// <param name="req"></param>
-    /// <returns></returns>
+    /// <returns>Token</returns>
     [HttpPost("Login")]
     public async Task<ActionResult<string>> VerifyLoginUsernamePassword(VerifyLoginUsernamePasswordRequest req)
     {

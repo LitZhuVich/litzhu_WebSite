@@ -13,7 +13,7 @@ namespace User.Infrastructure.Migrations
             migrationBuilder.AlterColumn<string>(
                 name: "Password",
                 table: "Users",
-                type: "nvarchar(100)",
+                type: "varchar(100)",
                 maxLength: 100,
                 nullable: false,
                 oldClrType: typeof(string),
@@ -23,7 +23,7 @@ namespace User.Infrastructure.Migrations
             migrationBuilder.AddColumn<string>(
                 name: "Email",
                 table: "UserLoginHistories",
-                type: "nvarchar(max)",
+                type: "varchar(255)",
                 nullable: false,
                 defaultValue: "");
         }

@@ -18,3 +18,4 @@ public class RoleConfig : IEntityTypeConfiguration<Roles>
         builder.HasQueryFilter(a => a.IsDeleted == false);
     }
 }
+    

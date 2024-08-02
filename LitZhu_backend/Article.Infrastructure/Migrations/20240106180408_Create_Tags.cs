@@ -15,12 +15,12 @@ namespace Article.Infrastructure.Migrations
                 name: "Tags",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    TagName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Id = table.Column<Guid>(type: "char(36)", nullable: false),
+                    TagName = table.Column<string>(type: "LONGTEXT", nullable: false),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false),
-                    CreationTime = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    DeletionTime = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    LastModificationTime = table.Column<DateTime>(type: "datetime2", nullable: true)
+                    CreationTime = table.Column<DateTime>(type: "datetime", nullable: false),
+                    DeletionTime = table.Column<DateTime>(type: "datetime", nullable: true),
+                    LastModificationTime = table.Column<DateTime>(type: "datetime", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -31,9 +31,9 @@ namespace Article.Infrastructure.Migrations
                 name: "Article_Tags",
                 columns: table => new
                 {
-                    ArticleId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    TagId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                    ArticleId = table.Column<Guid>(type: "char(36)", nullable: false),
+                    TagId = table.Column<Guid>(type: "char(36)", nullable: false),
+                    Id = table.Column<Guid>(type: "char(36)", nullable: false)
                 },
                 constraints: table =>
                 {
